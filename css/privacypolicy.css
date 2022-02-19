@@ -1,0 +1,68 @@
+
+/** Sections **/
+
+.pagesection {
+     padding: 40px 10vw;
+     position: relative;
+     text-align: left;
+   }
+   
+   .container {
+     font-family: graphik-regular;
+     font-size: 14px;
+     padding-top: 10px;
+     line-height: 24px;
+     color: #222;
+   }
+   
+   .button {
+     font-family: graphik-regular;
+     font-size: 12px;
+     background-color: #092168;
+     color: white;
+     padding: 10px 20px;
+     border-radius: 20px;
+   }
+   
+   .button:hover {
+     box-shadow: 0 0 5px rgba(12, 10, 10, 0.8); 
+   }
+   
+   a.button {
+     color: white;
+   }
+   
+   /** Sections with custom backgorund colors**/
+   
+   #section-1, #section-3, #section-5, #section-7, #section-9, #introvideo {
+     background-color: rgba(227, 218, 203, 0.5);
+   }
+   
+
+   /** Intro Header Bar**/ 
+   
+   .introheader {
+     background-color: #e84249;
+     opacity: 1;
+   }
+   
+   .introheader .content {
+     padding: 0px 0px;
+     margin: 0px 10vw;
+     line-height: 60px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+   .introheader .logo img {
+     height: 35px;
+   }
+   
+   .introheader .button {
+     background-color: white;
+     color: #092168;
+     line-height: 10px;
+   }
+   
