@@ -887,32 +887,26 @@ function updateDisplay() {
         }
     }
 
-    // Show CO2 savings, if applicable
-    if (num_workloads_pa == 0) {
-        // $("#carbon").animate({
-        //     opacity: 0
-        // }, 1000);
-    } else {
-        const kwh_pa = 67.3 * num_workloads_pa;  // Total kWh per annum saved
+    // Show CO2 savings
+    const kwh_pa = 67.3 * num_workloads_pa;  // Total kWh per annum saved
 
-        if ($("#elec-saving").html() != formatNumber(Math.round(kwh_pa))) {
-            const CO2_equiv_pa = kwh_pa * kg_CO2_equiv_per_kwh;
-            const equiv_trees = Math.round(CO2_equiv_pa / tree_kgs_CO2_pa);
-            const equiv_carMiles = Math.round(CO2_equiv_pa / car_kgs_CO2_pmile);
+    if ($("#elec-saving").html() != formatNumber(Math.round(kwh_pa))) {
+        const CO2_equiv_pa = kwh_pa * kg_CO2_equiv_per_kwh;
+        const equiv_trees = Math.round(CO2_equiv_pa / tree_kgs_CO2_pa);
+        const equiv_carMiles = Math.round(CO2_equiv_pa / car_kgs_CO2_pmile);
 
-            $("#elec-saving").html(formatNumber(Math.round(kwh_pa)));
-            $("#num-trees").html(formatNumber(equiv_trees));
-            $("#num-miles").html(formatNumber(equiv_carMiles));
-            if ($("#carbon").css("opacity") != "1") {
-                $("#carbon").animate({
-                    opacity: 1
-                }, 2000);
-            } else {
-                $("#elec-saving, #num-trees, #num-miles").css("opacity", "0");
-                $("#elec-saving, #num-trees, #num-miles").animate({
-                    opacity: 1
-                }, 1000);
-            }
+        $("#elec-saving").html(formatNumber(Math.round(kwh_pa)));
+        $("#num-trees").html(formatNumber(equiv_trees));
+        $("#num-miles").html(formatNumber(equiv_carMiles));
+        if ($("#carbon").css("opacity") != "1") {
+            $("#carbon").animate({
+                opacity: 1
+            }, 2000);
+        } else {
+            $("#elec-saving, #num-trees, #num-miles").css("opacity", "0");
+            $("#elec-saving, #num-trees, #num-miles").animate({
+                opacity: 1
+            }, 1000);
         }
     }
    
@@ -947,6 +941,19 @@ function addCase(num) {
 
     updateDisplay();
     // closeAdder();
+}
+
+function changeValue(num, comp, mf, factor) {
+    if (comp == -1) {
+        const increment = data[num]["value"]["step"];
+        const new_val = Math.max(0, parseInt($("#mf-"+num).val()) + increment*factor);
+        $("#mf-"+num).val(new_val);
+    } else {
+        const increment = data[num]["mfs"][mf]["step"];
+        const new_val = Math.max(0, parseInt($("#mf-"+num+"-"+comp+"-"+mf).val()) + increment*factor);
+        $("#mf-"+num+"-"+comp+"-"+mf).val(new_val);
+    }
+    addCase(num);   
 }
 
 function openAdder(num) {
@@ -1011,16 +1018,21 @@ function openAdder(num) {
                     c += `
                         <label for="mf-`+num+`-`+complexity+`">`+mfs[i]["name"]+`:</label>
                         <br />
-                        <input
-                            type="number"
-                            step="`+mfs[i]["step"]+`"
-                            min="0"
-                            id="mf-`+num+`-`+complexity+`-`+i+`"
-                            value="`+mfs[i]["default"]+`"
-                            style="--c: `+colour+`;"
-                            onfocusout="addCase('`+num+`');"
-                        />
-                        <br />
+                        <div style="display: grid; grid-template-columns: 150px 20px; justify-content: start; align-items: center; gap: 2px;">
+                            <input
+                                type="number"
+                                step="`+mfs[i]["step"]+`"
+                                min="0"
+                                id="mf-`+num+`-`+complexity+`-`+i+`"
+                                value="`+mfs[i]["default"]+`"
+                                style="--c: `+colour+`; box-sizing: border-box; width: 100%;"
+                                onfocusout="addCase('`+num+`');"
+                            />
+                            <div style="display: grid; grid-template-rows: 1fr 1fr; justify-content: center; color: `+colour+`;">
+                                <div class="clickable" onclick="changeValue(`+num+`, `+complexity+`, `+i+`, 1);">˄</div>
+                                <div class="clickable" onclick="changeValue(`+num+`, `+complexity+`, `+i+`, -1);">˅</div>
+                            </div>
+                        </div>
                         <br />
                         `;
                 }
@@ -1042,15 +1054,20 @@ function openAdder(num) {
                 <p><b>`+data[num]["value"]["label"]+`</b></p>
                 <label for="mf-`+num+`">`+data[num]["value"]["short"]+`:</label>
                 <br />
-                <input
-                    type="number"
-                    step="`+data[num]["value"]["step"]+`"
-                    min="0"
-                    id="mf-`+num+`"
-                    value="0"
-                    style="--c: `+colour+`;"
-                    onfocusout="addCase('`+num+`');"
-                />
+                <div style="display: grid; grid-template-columns: 150px 20px; justify-content: start; align-items: center; gap: 2px;">
+                    <input
+                        type="number"
+                        step="`+data[num]["value"]["step"]+`"
+                        min="0"
+                        id="mf-`+num+`"
+                        value="0"
+                        style="--c: `+colour+`; box-sizing: border-box; width: 100%;"
+                        onfocusout="addCase('`+num+`');"
+                    />
+                    <div style="display: grid; grid-template-rows: 1fr 1fr; justify-content: center; color: `+colour+`;">
+                    <div class="clickable" onclick="changeValue(`+num+`, -1, -1, 1);">˄</div>
+                    <div class="clickable" onclick="changeValue(`+num+`, -1, -1, -1);">˅</div>
+                </div>
             </div>
             `;
     }
@@ -1105,10 +1122,11 @@ function openAdder(num) {
         const box_num = info_id.substring(3);
         const box_id = "#ib-" + box_num;
         const arrow_id = "#iba-" + box_num;
-        // const offset = $(info_id).offset();
         const offset = $(info_id).position();
         let left = offset["left"] - $(box_id).outerWidth() + 50;
         let top = offset["top"] - $(box_id).outerHeight() - 15;
+        // let left = position["left"];
+        // let top = position["top"];
         $(box_id).css("top", top+"px").css("left", left+"px");
 
         left = offset["left"] + $(info_id).outerWidth()/2 - $(arrow_id).outerWidth()/2;
