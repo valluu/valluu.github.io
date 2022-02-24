@@ -358,118 +358,124 @@
       Value Estimator
     </div>
     <div id="estimatorsection">
+      
         <div id="overlay" onclick="closePopup();">
-      </div>
-      <div id="popup">
-          <div id="inforeq">
-              <h2>Your details</h2>
-              <p>To receive your report, please enter the following information.</p>
-              <!-- This overlay is used for capturing user information before generating the report -->
-              <form id="usrinfo" onsubmit="generateReport_step2(); return false;">
-                  <!-- <label for="company">Company</label><br /> -->
-                  <input type="text" id="company" name="company" placeholder="Company" required />
+        </div>
+        <div id="popup">
+            <div id="inforeq">
+                <h2>Your details</h2>
+                <p>To receive your report, please enter the following information.</p>
+                <!-- This overlay is used for capturing user information before generating the report -->
+                <form id="usrinfo" onsubmit="generateReport_step2(); return false;">
+                    <!-- <label for="company">Company</label><br /> -->
+                    <input type="text" id="company" name="company" placeholder="Company" required />
 
-                  <!-- <label for="name">Name</label><br /> -->
-                  <input type="text" id="name" name="name" placeholder="Name" required />
+                    <!-- <label for="name">Name</label><br /> -->
+                    <input type="text" id="name" name="name" placeholder="Name" required />
 
-                  <!-- <label for="role">Job title</label><br /> -->
-                  <input type="text" id="role" name="role" placeholder="Job title" required />
+                    <!-- <label for="role">Job title</label><br /> -->
+                    <input type="text" id="role" name="role" placeholder="Job title" required />
 
-                  <!-- <label for="name">Email address</label><br /> -->
-                  <input type="email" id="email" name="email" placeholder="Email address" required />
+                    <!-- <label for="name">Email address</label><br /> -->
+                    <input type="email" id="email" name="email" placeholder="Email address" required />
 
-                  <input type="submit" value="Submit" class="button" style="background-color: #62BDA4; width:50%; color: #ffffff" />
-              </form>
-          </div>
-          <div id="reportloading" style="display: none;">
-              <div class="loader"></div><em>Generating report...</em>
-          </div>
-          <div id="reportdone" style="display: none;">
-              <p>Thank you!</p>
-              <p>Your report will be in your inbox shortly.</p>
-              <p><em>Don't forget to check your spam folder if it doesn't arrive.</em></p>
-              <!-- <p>Your report is ready to view!</p>
-              <br />
-              <button id="reportviewer"><i class="fas fa-file-pdf"></i> View report</button> -->
-          </div>
-      </div>
+                    <input type="submit" value="Submit" class="button" style="background-color: #62BDA4; width:50%; color: #ffffff" />
+                </form>
+            </div>
+            <div id="reportloading" style="display: none;">
+                <div class="loader"></div><em>Generating report...</em>
+            </div>
+            <div id="reportdone" style="display: none;">
+                <p>Thank you!</p>
+                <p>Your report will be in your inbox shortly.</p>
+                <p><em>Don't forget to check your spam folder if it doesn't arrive.</em></p>
+                <!-- <p>Your report is ready to view!</p>
+                <br />
+                <button id="reportviewer"><i class="fas fa-file-pdf"></i> View report</button> -->
+            </div>
+        </div>
 
+        <div id="infobox">
+        </div>
 
+        <div class="des-b"><br /><br /><br /><br /></div>
 
-      <div id="infobox">
-      </div>
+        <div id="main">
 
-      <div class="des-b"><br /><br /><br /><br /></div>
+            <div id="welcome-note" class="mob-b">
+                <br />
+                <h3 style="color: var(--vred);">Getting Started</h3>
+                <p>Based upon your business needs, select one, several, or all of the categories below and input your data to estimate how much Valluu can save you.</p>
+            </div>
+            <div id="estimator">
+                <div>
 
-      <div id="main">
+                    <div id="welcome-note" class="des-b">
+                        <br />
+                        <h3 style="color: var(--vred); margin-top: 0;">Getting Started</h3>
+                        <p>Based upon your business needs, select one, several, or all of the categories below and input your data to estimate how much Valluu can save you.</p>
+                    </div>
 
-          <div id="welcome-note" class="mob-b">
-              <br />
-              <h3 style="color: var(--vred);">Getting Started</h3>
-              <p>Based upon your business needs, select one, several, or all of the categories and input your data to estimate how much Valluu can save you.</p>
-          </div>
-          <div id="estimator">
-              <div>
-                  <div id="usecases">
-                  </div>
-                  <div id="adder">
-                  </div>
+                    <div id="usecases">
+                    </div>
+                    <div id="adder">
+                    </div>
 
-                  <div>
-                      <div id="welcome-note" class="des-b">
-                          <br />
-                          <h3 style="color: var(--vred);">Getting Started</h3>
-                          <p>Based upon your business needs, select one, several, or all of the categories and input your data to estimate how much Valluu can save you.</p>
-                      </div>
-                      <div id="finish-buttons" class="button-group">
-                          <div id="reset-button" class="button des-f" onclick="reset();">
-                              <img src="img/reset.png" />
-                              <span>Reset</span>
-                          </div>
-                          <div id="confirm-reset-button" class="button des-f" onclick="confirm_reset();" style="display: none;">
-                              <span>Confirm?</span>
-                          </div>
-                          <div id="report-button" class="button" onclick="generateReport();" style="--c: #092168; --t: #ffffff;">
-                              <img src="img/pdf.png" />
-                              <span>Generate Report</span>
-                          </div>
-                      </div>
-                  </div>
+                    <div>
+                        <div id="finish-buttons" class="button-group">
+                            <div id="reset-button" class="button des-f" onclick="reset();">
+                                <img src="img/reset.png" />
+                                <span>Reset</span>
+                            </div>
+                            <div id="confirm-reset-button" class="button des-f" onclick="confirm_reset();" style="display: none;">
+                                <span>Confirm?</span>
+                            </div>
+                            <div id="report-button" class="button" onclick="generateReport();" style="--c: #092168; --t: #ffffff;">
+                                <img src="img/pdf.png" />
+                                <span>Generate Report</span>
+                            </div>
+                        </div>
+                    </div>
 
-              </div>
-              <div id="display">
-                  <div id="overview">
-                      <p class="header">Potential Cost Saving:</p>
-                      <p class="v">$<span id="ptv-figure">0</span></p>
-                      <p class="note">per annum</p>
-                      <div id="bars">
-                          <!-- Script inserts bars here -->
-                      </div>
-                      <div class="note" id="cost_per_fte">
-                          Average daily cost per FTE: $<span id="cpfte"></span> <span id="edit-cpfte"><i onclick="editCostPerFTE();" class="clickable fas fa-pencil-alt"></i></span>
-                      </div>
-                  </div>
-                  <div id="carbon">
+                </div>
+                <div id="display">
+                    <div id="overview">
+                        <p class="header">Potential Cost Saving:</p>
+                        <p class="v">$<span id="ptv-figure">0</span></p>
+                        <!-- <p class="v">$<span id="ptv-figure">0</span> <span class="note">per annum</span></p> -->
+                        <p class="note">per annum</p>
+                        <div id="bars">
+                            <!-- Script inserts bars here -->
+                        </div>
+                        <div class="note" id="cost_per_fte">
+                            Average daily cost per FTE: $<span id="cpfte"></span> <span id="edit-cpfte"><i onclick="editCostPerFTE();" class="clickable fas fa-pencil-alt"></i></span>
+                        </div>
+                    </div>
+                    <div id="carbon">
 
-                      <!-- <div style="width: 100%; display: grid; grid-template-columns: 80px 1fr; justify-content: start; column-gap: 50px"> -->
-                          <div>
-                              <h3 style="color: var(--vgreen);">Reduce CO<sub>2</sub> emissions</h3>
-                              <p>In running the Data Workloads associated with your inputs, Valluu could save you <span id="elec-saving">0</span> kWh of electricity per annum.</b></p>
-                              <p>This is equivalent to...</p>
-                          </div>
-                          <br />
-                          <div style="display: grid; grid-template-columns: auto auto; align-items: end; justify-content: start; column-gap: 10px; row-gap: 5px;" >
-                              <img src="img/tree.png" style="width: 80px;" />
-                              <img src="img/car.png" style="width: 80px;" />
-                              <span>Planting <b><span id="num-trees">0</span></b> trees</span>
-                              <span>Saving <b><span id="num-miles">0</span></b> car-miles</span>
-                          </div>
-                      <!-- </div> -->
-                  </div>
-              </div>
-          </div>
+                        <!-- <div style="width: 100%; display: grid; grid-template-columns: 80px 1fr; justify-content: start; column-gap: 50px"> -->
+                            <div>
+                                <h3 style="color: var(--vgreen); margin-top: 0;">Reduce CO<sub>2</sub> emissions</h3>
+                                <p>In running the Data Workloads associated with your inputs, Valluu could save you <span id="elec-saving">0</span> kWh of electricity per annum.</b></p>
+                                <p>This is equivalent to...</p>
+                            </div>
+                            <br />
+                            <div style="display: grid; grid-template-columns: auto auto auto; align-items: end; justify-content: space-evenly; justify-items: center; column-gap: 40px; row-gap: 5px;" >
+                                <img src="img/tree.png" style="width: 80px;" />
+                                <p style="font-size: 16px; color: var(--vgreen);">or</p>
+                                <img src="img/car.png" style="width: 80px;" />
+                                <span>Planting <b><span id="num-trees">0</span></b> trees</span>
+                                <br />
+                                <span>Saving <b><span id="num-miles">0</span></b> car-miles</span>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
 
-      </div>
+        </div>
+
+    </div>
 
   </section>
 
