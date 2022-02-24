@@ -148,7 +148,7 @@
     color: #092168;
     width: 80vw;
     max-width: 600px;
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .intro .introdesc .navigation {
@@ -536,7 +536,7 @@
     color: #092168;
     width: 80vw;
     max-width: 600px;
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   .intro .introdesc .navigation {
@@ -932,7 +932,7 @@
     color: #092168;
     width: 80vw;
     max-width: 600px;
-    font-size: calc(5vw);
+    font-size: 2em;
   }
 
   .intro .introdesc .navigation {

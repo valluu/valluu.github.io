@@ -132,7 +132,7 @@ a.button {
   color: #092168;
   width: 40vw;
   max-width: 600px;
-  font-size: calc(3vw);
+  font-size: 3em;
   text-align: left;
   margin-bottom: 60px;
 }
@@ -272,8 +272,16 @@ a.button {
 
 /*   */
 
-.operationalrealisation img {
-  height: 200px;
+.operationalrealisation .visuals > div, .operationalrealisation .visuals > img {
+  width: 80%;
+  max-width: 230px;
+  margin: 0 auto;
+}
+
+.operationalrealisation .visuals > div img {
+  width: 80%;
+  max-width: 230px;
+  margin: 0 auto;
 }
 
 .operationalrealisation div.title, .operationalrealisation .subtitle, .operationalrealisation .highlight, .operationalrealisation .text {
@@ -556,7 +564,9 @@ a.button {
 /** Timeline **/
 .timeline {
   position: relative;
-  margin: 0px 50px;
+  margin: 0 auto;
+  width: 50%;
+  min-width: 300px;
 }
 
 .timeline label {
@@ -588,6 +598,7 @@ a.button {
   background: #FFFFFF;
   border-radius: 10px;
   box-shadow: 0px 16px 15px -10px rgb(105 96 215 / 30%);
+  font-family: graphik-regular;
 }
 
 .timeline::after {
@@ -597,7 +608,7 @@ a.button {
   background-color: white;
   top: 0;
   bottom: 0;
-  left: 15%;
+  left: 8%;
 }
 
 .card:nth-child(1) .fa-truck-moving {
