@@ -581,7 +581,8 @@ a.button {
 
 .timeline .tlcontainer .cards .card {
   z-index: inherit;
-  height: 55px;
+  height: 40px;
+  max-width: 200px;
   padding: 10px 30px;
   margin-bottom: 12px;
   background: #FFFFFF;
