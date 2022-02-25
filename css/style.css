@@ -1,4 +1,3 @@
-
 /** Sections **/
 
 section {
@@ -92,7 +91,7 @@ section {
 }
 
 .button:hover {
-  box-shadow: 0 0 5px rgba(12, 10, 10, 0.8); 
+  box-shadow: 0 0 5px rgba(12, 10, 10, 0.8);
 }
 
 a.button {
@@ -105,11 +104,17 @@ a.button {
 
 /** Sections with custom backgorund colors**/
 
-#section-2, #section-4, #section-6, #section-8, #introvideo, #solution, #democratization {
+#section-2,
+#section-4,
+#section-6,
+#section-8,
+#introvideo,
+#solution,
+#democratization {
   background-color: rgba(227, 218, 203, 0.5);
 }
 
-/** Intro **/ 
+/** Intro **/
 
 .intro {
   position: relative;
@@ -136,8 +141,6 @@ a.button {
   text-align: left;
   margin-bottom: 60px;
 }
-
-
 
 .intro .introdesc .navigation {
   margin: 10px 0px;
@@ -176,11 +179,11 @@ a.button {
 
 .arrow img {
   position: absolute;
-  left: calc(100vw * 0.20);
+  left: calc(100vw * 0.2);
   bottom: 10px;
 }
 
-/** Intro Header Bar**/ 
+/** Intro Header Bar**/
 
 .introheader {
   z-index: 999;
@@ -198,9 +201,9 @@ a.button {
 }
 
 .introheader .content {
-    padding: 0px 0px;
-    justify-content: space-between;
-    margin: 0px 10vw;
+  padding: 0px 0px;
+  justify-content: space-between;
+  margin: 0px 10vw;
 }
 
 .introheader .logo img {
@@ -215,14 +218,13 @@ a.button {
 }
 
 .arrowdown {
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 20px solid #e84249;
   position: absolute;
   left: 20%;
-
 }
 
 /**  Intro **/
@@ -231,30 +233,30 @@ a.button {
   color: #092168;
 }
 
-/** About **/ 
+/** About **/
 
 #about .estimatorlink {
   margin-top: 25px;
 }
 
-#about .descriptions, #about .visuals  {
+#about .descriptions,
+#about .visuals {
   max-width: 50%;
-
 }
 
 #about .bestaction {
   /*left: calc((100vw * 0.20 ) - 10vw);*/
   font-family: lora;
-    font-size: 2em;
-    line-height: normal;
-    color: #092168;
-    margin-bottom: 20px;
+  font-size: 2em;
+  line-height: normal;
+  color: #092168;
+  margin-bottom: 20px;
 
-    font-family: lora-italic;
-    font-size: 2em;
-    line-height: normal;
-    color: #e84249;
-    margin-bottom: 10px;
+  font-family: lora-italic;
+  font-size: 2em;
+  line-height: normal;
+  color: #e84249;
+  margin-bottom: 10px;
 }
 
 #about .bestactiontitle {
@@ -272,28 +274,25 @@ a.button {
 
 /*   */
 
-.operationalrealisation .visuals > div, .operationalrealisation .visuals > img {
-  width: 80%;
-  max-width: 230px;
-  margin: 0 auto;
-}
-
-.operationalrealisation .visuals > div img {
-  width: 80%;
-  max-width: 230px;
-  margin: 0 auto;
-}
-
-.operationalrealisation div.title, .operationalrealisation .subtitle, .operationalrealisation .highlight, .operationalrealisation .text {
+.operationalrealisation div.title,
+.operationalrealisation .subtitle,
+.operationalrealisation .highlight,
+.operationalrealisation .text {
   text-align: center;
 }
 
-.designarchitecture div.title, .designarchitecture div.subtitle, .designarchitecture div.highlight, .designarchitecture div.text {
+.designarchitecture div.title,
+.designarchitecture div.subtitle,
+.designarchitecture div.highlight,
+.designarchitecture div.text {
   text-align: center;
 }
 
+.operationalrealisation div.title {
+  text-align: center;
+}
 
-/** Estimator **/ 
+/** Estimator **/
 
 #estimator {
   text-align: left;
@@ -319,10 +318,9 @@ a.button {
   margin-top: 25px;
 }
 
-#estimator .estimatorlink .button{
+#estimator .estimatorlink .button {
   background-color: #e84249;
 }
-
 
 /** Estimator Calcs **/
 
@@ -376,7 +374,7 @@ a.button {
   width: 100%;
 }
 
-.bar1{
+.bar1 {
   background-color: var(--c, #646464);
   color: #ffffff;
   border-radius: 10px;
@@ -405,11 +403,11 @@ a.button {
 
 /** Video **/
 
- video {
+video {
   width: 90%;
 }
 
-/** Questions **/ 
+/** Questions **/
 
 .questions {
   position: relative;
@@ -488,7 +486,35 @@ a.button {
   margin-bottom: 50px;
 }
 
-/** Sales Section **/ 
+.operationalvaluerealisation {
+  width: 50%;
+  min-width: 200px;
+  margin: 0 auto;
+}
+
+.operationalvaluerealisation .category {
+  margin: 10px auto;
+  border-radius: 20%;
+  font-size: 13px;
+  background-color: var(--c, #ffffff);
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: 1fr;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 5px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+/** Sales Section **/
 
 .cfs-wrapper {
   font-family: graphik-regular;
@@ -504,30 +530,30 @@ a.button {
 }
 
 .cfs-logo {
-    width: 40px;
-    height: 40px;
-    border: 2px solid #444444;
-    line-height: 20px;
-    border-radius: 40px;
-    padding: 10px;
-    margin: 10px auto;
-  }
+  width: 40px;
+  height: 40px;
+  border: 2px solid #444444;
+  line-height: 20px;
+  border-radius: 40px;
+  padding: 10px;
+  margin: 10px auto;
+}
 
 .cfs-text {
   margin-bottom: 20px;
 }
 
-.cfs-logo i{
+.cfs-logo i {
   color: #444444;
 }
 
-/** Footer **/ 
+/** Footer **/
 
 .footer {
   padding: 140px 10vw 50px 10vw;
   background-color: #62bda4;
   color: white;
-  font-family: graphik-regular,'Courier New', Courier, monospace;
+  font-family: graphik-regular, "Courier New", Courier, monospace;
 }
 
 .footer img {
@@ -535,7 +561,7 @@ a.button {
   margin-top: -15px;
 }
 .footer a {
-  padding-left: 20px; 
+  padding-left: 20px;
   color: white;
 }
 
@@ -551,7 +577,7 @@ a.button {
   right: 40px;
 }
 
-/** Sales Deck **/ 
+/** Sales Deck **/
 
 .visuals img {
   max-width: 400px;
@@ -574,14 +600,14 @@ a.button {
   /* identical to box height */
   margin-left: 66px;
   margin-top: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.timeline  .tlcontainer {
+.timeline .tlcontainer {
   width: 100%;
 }
 
-.timeline  .tlcontainer .cards {
+.timeline .tlcontainer .cards {
   margin-left: 12px;
 }
 
@@ -591,14 +617,14 @@ a.button {
   max-width: 200px;
   padding: 10px 30px;
   margin-bottom: 12px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 10px;
   box-shadow: 0px 16px 15px -10px rgb(105 96 215 / 30%);
   font-family: graphik-regular;
 }
 
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   background-color: white;
@@ -608,24 +634,23 @@ a.button {
 }
 
 .card:nth-child(1) .fa-truck-moving {
-  color: #e84249
+  color: #e84249;
 }
 
 .card .fa-truck-moving {
   font-size: 18px;
-  color: #62bda4
+  color: #62bda4;
 }
 
 .card > div {
   line-height: 19px;
 }
 
-
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--vgrey-light); 
+  background: var(--vgrey-light);
 }
 ::-webkit-scrollbar-thumb {
   background: rgba(221, 69, 75, 0.7);
@@ -633,9 +658,6 @@ a.button {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(221, 69, 75, 1);
 }
-
-
-
 
 #color-1 {
   background-color: #e84249;
