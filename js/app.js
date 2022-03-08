@@ -29,3 +29,12 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+/* Fancybox */
+
+$(document).ready(function () {
+
+  $('[data-fancybox="images"]').fancybox({
+   'type':'iframe','autoScale':true, 'width': "80vw", 'height':"80vh", 'centerOnScroll':true
+  });
+});

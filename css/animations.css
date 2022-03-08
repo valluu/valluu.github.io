@@ -78,7 +78,7 @@
   }
 }
 
-.arrow img, .bestactionarrow img{
+.arrow img, .bestactionarrow img, .play {
   -webkit-transition-property: -webkit-transform;
   -webkit-transition-duration: 7s;
   -moz-transition-property: -moz-transform background-color;

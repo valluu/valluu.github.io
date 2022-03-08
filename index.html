@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>VALLUU - Data Democratisation in Kubernetes </title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta name="keywords" content="kubernetes, data workloads, workload, workloads, data, processing, data processing, valluu"/>
+    <meta name="keywords"
+        content="kubernetes, data workloads, workload, workloads, data, processing, data processing, valluu" />
     <meta name="author" content="Valluu" />
- 
+
     <meta property="og:title" content="Valluu - Data Workload Democratization in Kubernetes" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://drectio.github.io/index.html" />
@@ -17,7 +18,7 @@
     <meta property="og:description"
         content="75% of employees are restricted when working with data (The Human impact of Data Literacy - Report 2020 - Accenture), Valluu eliminates these barriers and provides instant major returns on the direct bottom line." />
 
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
     <link rel="stylesheet" href="css/cookie-consent.css" />
     <script src="js/cookie-consent.js"></script>
@@ -27,10 +28,12 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/mediastyle.css" />
     <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
 
     <!-- Estimator -->
     <link rel="stylesheet" href="css/estimator.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/vendor/jquery.fancybox.min.js"></script>
     <script src="js/estimates.js"></script>
 
 
@@ -62,7 +65,7 @@
 
     <section id="intro" class="intro">
         <div class="databasecloud ">
-            <image src="img/databasecloud.svg"></image>
+            <image src="img/dataworkloadslifecycle.svg"></image>
         </div>
         <div class="introdesc">
             <div class="logo">
@@ -95,9 +98,11 @@
             <span class="logo">
                 <image src="img/valluu.svg"></image>
             </span>
+            <!--
             <a class="navestimator" href="/solution.html">
                 <span class="button">Learn more</span>
             </a>
+        -->
         </div>
     </section>
     <section id="arrow" class="arrow">
@@ -111,16 +116,6 @@
             <div class="content">
                 <div class="visuals">
                     <image class="reveal fade" src="img/confusingdata.svg"></image>
-                    <!--
-          <div class="bestaction">
-            <div class="bestactiontitle">Next best action ...</div>
-            <div class="bestactionarrow">
-              <a href="#introvideo">
-                <image src="img/arrowdown.svg"></image>
-              </a>
-            </div>
-          </div>
-          -->
                 </div>
                 <div class="descriptions">
                     <div class="title">
@@ -147,93 +142,72 @@
         </div>
     </section>
 
-    <!-- Video  -->
 
-    <!--
-  <section id="introvideo" class="pagesection introvideo">
-    <div class="container">
-      <div class="content">
-        <div class="descriptions">
-          <div class="title reveal fade-left">
-            <p> Your next best action?</p>
-          </div>
-          <div class="subtitle reveal fade-rigth">
-            Watch our short video
-          </div>
-        </div>
-        <div class="visuals">
-          <video controls class="reveal fade-right">
-            <source src="videos/introvideo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-    </div>
-  </section>
-  -->
+    <!-- Data Workload Democratisation for all CTx -->
 
-    <!-- Use Cases - Use Case 2 -->
-
-    <section id="section-2" class="pagesection">
-        <div class="democratization container">
-            <div class="content">
-                <div class="visuals reveal fade">
-                    <img src="/img/timetovalue-simple.svg" style="width: 100px;" alt="">
-                    <div class="subtitle" style="text-align:center;">Time to value</div>
-                    <div class="timeline">
-                        <div class="tlcontainer">
-                            <div class="cards">
-                                <div class="card">
-                                    <div>Location Data</div>
-                                    <i class="fa fa-truck-moving"></i>
-                                </div>
-                                <div class="card mid">
-                                    <div>Order Cancellations</div>
-                                    <i class="fa fa-truck-moving"></i>
-                                </div>
-                                <div class="card mid">
-                                    <div>New Orders</div>
-                                    <i class="fa fa-truck-moving"></i>
-                                </div>
-                                <div class="card">
-                                    <div>New Routings</div>
-                                    <i class="fa fa-truck-moving"></i>
-                                </div>
-                                <div class="card">
-                                    <div>Aditional Revenue</div>
-                                    <i class="fas fa-money-bill-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <section id="section-3" class="pagesection reveal fade">
+        <div class="content">
+            <div class="descriptions reveal fade">
+                <div class="title">
+                    Data workload democratisation
                 </div>
-                <div class="descriptions reveal fade">
-                    <div class="title">
-                        Business Value Realisation
-                    </div>
-                    <div class="subtitle">
-                        Order Management Use Case
-                    </div>
-                    <div class="highlight">
-                        The Order Manager receives a notification that there has been a major accident on one of the
-                        delivery routes and 3 out of the 5 drops are not going to be met in the drivers allocated time.
-                    </div>
-                    <div class="text">
-                        The Order Delivery Manager received a notification of the need to re-route the delivery and
-                        re-purpose some of the goods to fulfil new orders that just come in. An automated routine can be
-                        run by the managers phone, by scheduling the data workload to
-                        be run straight away and the new routing and delivery order information sent to the driver.
-                    </div>
+                <div class="subtitle">
+                    Empowering the business
                 </div>
+                <div class="highlight">
+                    Valuu has been designed for the business users, removing the need for IT support to create the
+                    business understanding derived from running data workloads.
+                </div>
+                <div class="text">
+                    Valluu is a true intelligent data management solution, created to leverage all possible data sources
+                    for the business user. It’s codeless data workload creation has a native language interface,
+                    enabling the solution to be used even by the most unsophisticated
+                    of IT system users, with simple drag-and-drop visual objects. The data workloads are catalogued and
+                    stored in a library for democratic use by anyone with the sanctioned profile. They can be scheduled
+                    to run, when the user requires,
+                    via business tools such as Microsoft teams, where they will then receive notification when they have
+                    run and have direct access to the outcome in the shared and personal library.
+                </div>
+            </div>
+            <div class="visuals reveal fade">
+                <img src="/img/roles.png" alt="" style="max-width: 300px;">
             </div>
         </div>
     </section>
 
+    <!-- Video  -->
+
+    <!--
+    <section id="introvideo" class="pagesection introvideo">
+        <div class="container">
+        <div class="content">
+            <div class="descriptions">
+            <div class="title reveal fade-left">
+                <p> Your next best action?</p>
+            </div>
+            <div class="subtitle reveal fade-rigth">
+                Watch our short video
+            </div>
+            </div>
+            <div class="visuals">
+            <video controls class="reveal fade-right">
+                <source src="videos/introvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+        </div>
+        </div>
+    </section>
+    -->
+
     <!-- Use Cases - Use Case 2 -->
 
-    <section id="section-3" class="pagesection">
+    <section id="section-4" class="pagesection">
         <div class="democratization container">
             <div class="content">
+                <div class="visuals reveal fade">
+                    <img src="/img/usecase.svg" alt="">
+                </div>
                 <div class="descriptions reveal fade">
                     <div class="title">
                         Business Value Realisation
@@ -256,63 +230,35 @@
                         Monday morning and prices revised Monday
                         afternoon.
                     </div>
-                </div>
-                <div class="visuals reveal fade">
-                    <img src="/img/timetovalue-simple.svg" style="width: 100px;" alt="">
-                    <div class="subtitle" style="text-align:center;">Time to value</div>
-                    <div class="timeline">
-                        <div class="tlcontainer">
-                            <div class="cards">
-                                <div class="card">
-                                    <div>Pricing Review</div>
-                                    <i class="fa fa-truck-moving"></i>
-                                </div>
-                                <div class="card mid">
-                                    <div>Data Workload Schedule</div>
-                                    <i class="fa fa-truck-moving"></i>
-                                </div>
-                                <div class="card mid">
-                                    <div>Data Workload Run</div>
-                                    <i class="fa fa-truck-moving"></i>
-                                </div>
-                                <div class="card">
-                                    <div>Pricing Data Decision</div>
-                                    <i class="fa fa-truck-moving"></i>
-                                </div>
-                                <div class="card">
-                                    <div>Pricing Revisions</div>
-                                    <i class="fas fa-money-bill-alt"></i>
-                                </div>
-                            </div>
+
+                    <a data-fancybox data-width="640" data-height="360" href="videos/introvideo.mp4">
+                        <div class="subtitle " style="color:rgb(243, 152, 140);">
+                            <span class="button navestimator">Play the video &nbsp; &nbsp; <i class="fas fa-play"></i>
+                            </span>
+                            <!--
+                            <img src="img/arrowdown.svg" class="" style="transform: rotate(-90deg); width: 30px"> 
+                            &nbsp; Play the video! &nbsp; 
+                            <img src="img/arrowdown.svg" class="" style="transform: rotate(-90deg); width: 30px">
+                            -->
                         </div>
-                    </div>
+                    </a>
+
                 </div>
             </div>
+
         </div>
+
     </section>
+
+
 
     <!-- Use Cases - Use Case 2 -->
 
-    <section id="section-4" class="pagesection operationalrealisation">
+    <section id="section-5" class="pagesection operationalrealisation">
         <div class="container">
 
             <div class="content">
-                <div class="visuals reveal fade">
-                    <div class="operationalvaluerealisation">
-                        <div class="category" style="--c: #E84249;">
-                            <img src="img/icon2-prod.png" style="height:30px;">
-                            <span style="color: #ffffff;">Productivity</span>
-                        </div>
-                        <div class="category" style="--c: #62BDA4;">
-                            <img src="img/icon2-sust.png" style="height:30px;">
-                            <span style="color: #ffffff;">Sustainability</span>
-                        </div>
-                        <div class="category" style="--c: #092168;">
-                            <img src="img/icon2-oper.png" style="height:30px;">
-                            <span style="color: #ffffff;">Operational Costs</span>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="descriptions reveal fade">
                     <div class="title">
                         Operational value realisation
@@ -334,6 +280,22 @@
                         without the need of human interaction. This vastly improves the optimisation of the IT
                         infrastructure, reducing operating and management costs and directly reducing the production
                         energy and the associated CO2 emissions.
+                    </div>
+                </div>
+                <div class="visuals reveal fade">
+                    <div class="operationalvaluerealisation">
+                        <div class="category" style="--c: #E84249;">
+                            <img src="img/icon2-prod.png" style="height:30px;">
+                            <span style="color: #ffffff;">Productivity</span>
+                        </div>
+                        <div class="category" style="--c: #62BDA4;">
+                            <img src="img/icon2-sust.png" style="height:30px;">
+                            <span style="color: #ffffff;">Sustainability</span>
+                        </div>
+                        <div class="category" style="--c: #092168;">
+                            <img src="img/icon2-oper.png" style="height:30px;">
+                            <span style="color: #ffffff;">Operational Costs</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -475,6 +437,43 @@
 
         </div>
 
+    </section>
+
+    <!-- Solution Overview -->
+
+    <section id="section-7" class="pagesection">
+        <div class="solutionoverview container">
+            <div class="content">
+
+                <div class="descriptions reveal fade">
+                    <div class="title">
+                        Solution overview
+                    </div>
+                    <div class="subtitle">
+                        Leveraging the future, now
+                    </div>
+                    <div class="highlight">
+                        Valluu has been designed to leverage the capability of Kubernetes on Cloud Services, On-premise
+                        IT Infrastructure or Hybrid, with fully automated setup.
+                    </div>
+                    <div class="text">
+                        Vallu is a intelligent business data management solution, that utilises the latest technologies,
+                        without requiring any integration or change to the existing business applications or IT
+                        infrastructure. It creates a maintains a meta-data library, that powers
+                        user interfaces, such as the drag-and-drop new data workload creation, finance control access
+                        and scheduling, with dashboard based reporting and visualisation. A configurable API enables
+                        direct meta dataflows into existing service
+                        management systems, to enable visible governance of change, utilisation and control of existing
+                        IT assets.
+                    </div>
+                </div>
+                <div class="visuals reveal fade">
+                    <a href="/img/solutionoverview.svg" data-fancybox="images">
+                        <img src="/img/solutionoverview.svg" alt="" style="max-width: 500px;">
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Questions  -->
