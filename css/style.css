@@ -73,6 +73,7 @@ section {
 .text {
   font-family: lora-italic;
   margin-bottom: 20px;
+  line-height: 24px;
 }
 
 .notes {

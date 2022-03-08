@@ -306,7 +306,8 @@
   }
 
   .estimator img {
-    width: 90vw;
+    
+    width: auto;
     max-width: 90vw;
     position: relative;
   }
@@ -485,7 +486,7 @@
     color: #092168;
     width: 80vw;
     max-width: 600px;
-    font-size: 2em;
+    font-size: 1.3em;
   }
 
 }
