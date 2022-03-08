@@ -138,8 +138,9 @@ a.button {
   color: #092168;
   width: 40vw;
   max-width: 600px;
-  font-size: 3em;
+  font-size: 2em;
   text-align: left;
+  margin-top: 20px;
   margin-bottom: 60px;
 }
 
