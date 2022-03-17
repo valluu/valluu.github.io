@@ -21,8 +21,30 @@
   --vgrey-light: #e9e9e9;
 }
 
+
+@font-face {
+  font-family: graphik-regular;
+  src: url("../fonts/Graphik-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: graphik;
+  src: url("../fonts/Graphik-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: lora-italic;
+  src: url("../fonts/Lora-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: lora;
+  src: url("../fonts/Lora-VariableFont_wght.ttf") format("truetype");
+}
+
+
 #estimatorsection {
-  font-family: century-gothic, sans-serif;
+  font-family: graphik-regular;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   color: #777777;
