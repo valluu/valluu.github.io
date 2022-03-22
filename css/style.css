@@ -572,12 +572,14 @@ video {
   background-color: #62bda4;
   color: white;
   font-family: graphik-regular, "Courier New", Courier, monospace;
+  line-height: 75px;
 }
 
 .footer img {
   width: 100px;
   margin-top: -15px;
   float: right;
+  width: 160px;
 }
 .footer a {
   color: white;
