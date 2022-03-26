@@ -1,10 +1,24 @@
 
+
 var intro = document.getElementById("intro");
-var introheader = document.getElementById("introheader");
-var introheadercontent = document.getElementById("introheadercontent");
+var questions = document.getElementById("questions");
+var contactbutton = document.getElementById("contactbutton");
+
 var introoffset = intro.offsetHeight;
 
 function reveal() {
+
+  var questions = document.getElementById("questions");
+  var windowHeight = window.innerHeight;
+  var elementTop = questions.getBoundingClientRect().top;
+  var elementVisible = 80;
+
+  if (elementTop < windowHeight - elementVisible) {
+      contactbutton.classList.add("hidden");
+    } else {
+      contactbutton.classList.remove("hidden");
+    }
+  
   var reveals = document.querySelectorAll(".reveal");
 
   for (var i = 0; i < reveals.length; i++) {

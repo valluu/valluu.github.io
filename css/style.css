@@ -152,7 +152,8 @@ a.button {
 }
 
 .intro .introdesc .button {
-  border-radius: 20px;
+  width: 155px;
+  border-radius: 100px;
   background-color: white;
   padding: 10px 30px;
   margin: 0px 20px 0px 0px;
@@ -166,6 +167,17 @@ a.button {
 .intro .introdesc .navestimator {
   background-color: white;
 }
+
+.intro .introdesc .navestimator span {
+  vertical-align: sub;
+  font-size: 18px;
+}
+
+.intro .introdesc .navestimator img {
+  width: 55px;
+}
+
+
 
 .intro .databasecloud img {
   height: 70vh;
@@ -182,9 +194,10 @@ a.button {
 }
 
 .arrow img {
+  width: 80px;
   position: absolute;
   left: calc(100vw * 0.2);
-  bottom: 10px;
+  bottom: -20px;
 }
 
 /*
@@ -576,7 +589,6 @@ video {
 }
 
 .footer img {
-  width: 100px;
   margin-top: -15px;
   float: right;
   width: 160px;
