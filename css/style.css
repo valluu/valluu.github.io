@@ -193,11 +193,20 @@ a.button {
   top: 0px;
 }
 
-.arrow img {
-  width: 80px;
+.arrow.left img {
+  width: 90px;
   position: absolute;
   left: calc(100vw * 0.2);
-  bottom: -20px;
+  bottom: -40px;
+  z-index: 1;
+}
+
+.arrow.right img {
+  width: 90px;
+  position: absolute;
+  right: calc(100vw * 0.2);
+  bottom: -40px;
+  z-index: 1;
 }
 
 /*

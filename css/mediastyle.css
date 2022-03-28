@@ -111,6 +111,10 @@
     min-width: 100%;
   }
 
+  .arrow img {
+    display: none
+  }
+
   .descriptions, .visuals, #about .descriptions, #about .visuals {
     max-width: 100%;
     width: 100%;
@@ -478,6 +482,12 @@
 @media only screen and (min-width: 0px) and (max-width: 400px) and (orientation: portrait) {
   /* Styles */
   
+
+  .arrow img {
+    display: none
+  }
+
+
   .intro .introdesc .title {
     font-family: lora-italic;
     color: #092168;
@@ -523,6 +533,12 @@
   .intro .logo img {
     height: 10vw;
   }
+
+
+  .arrow img {
+    display: none
+  }
+
 
   .intro .introdesc {
     position: absolute;
