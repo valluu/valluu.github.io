@@ -340,6 +340,7 @@ a.button {
 #estimator .contactlink {
   text-align: center;
 }
+
 /*
 #estimator .descriptions {
   flex-basis: 40%;
@@ -487,7 +488,8 @@ video {
 }
 
 .questions input {
-  border: none; /* <-- This thing here */
+  border: none;
+  /* <-- This thing here */
   border: solid 1px white;
   border-radius: 20px;
   padding: 10px 10px;
@@ -506,7 +508,8 @@ video {
 
 .questions textarea {
   width: 100%;
-  border: none; /* <-- This thing here */
+  border: none;
+  /* <-- This thing here */
   border: solid 1px white;
   border-radius: 15px;
   padding: 10px 10px;
@@ -519,7 +522,8 @@ video {
   color: white;
   padding: 10px 50px;
   resize: none;
-  border: none; /* <-- This thing here */
+  border: none;
+  /* <-- This thing here */
   border: solid 1px none;
   border-radius: 25px;
   margin-bottom: 50px;
@@ -602,6 +606,7 @@ video {
   float: right;
   width: 160px;
 }
+
 .footer a {
   color: white;
 }
@@ -684,19 +689,22 @@ video {
   color: #62bda4;
 }
 
-.card > div {
+.card>div {
   line-height: 19px;
 }
 
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--vgrey-light);
 }
+
 ::-webkit-scrollbar-thumb {
   background: rgba(221, 69, 75, 0.7);
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(221, 69, 75, 1);
 }

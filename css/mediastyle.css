@@ -5,15 +5,16 @@
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+    /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
          Print styles.
@@ -22,1059 +23,1152 @@
          ========================================================================== */
 
 @media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+    *,
+    *::before,
+    *::after {
+        background: #fff !important;
+        color: #000 !important;
+        /* Black prints faster */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
 
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
 
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
+    a[href]::after {
+        content: " ("attr(href) ")";
+    }
 
-  /*
+    abbr[title]::after {
+        content: " ("attr(title) ")";
+    }
+
+    /*
          * Don't show links that are fragment identifiers,
          * or use the `javascript:` pseudo protocol
          */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+        content: "";
+    }
 
-  pre {
-    white-space: pre-wrap !important;
-  }
+    pre {
+        white-space: pre-wrap !important;
+    }
 
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
 
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
 
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
 
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
 }
 
+
 /* Smartphones (portrait and landscape) ----------- */
+
 @media only screen and (min-width: 0px) and (max-width: 768px) and (orientation: portrait) {
-  /* Styles */
-
-  .title {
-    font-family: lora;
-    font-size: 2.5em;
-  }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .introheader .content {
-    flex-direction: row;
-    padding: 0px 0px;
-    justify-content: space-between;
-    margin: 0px 5vw;
-  }
-
-  #about .visuals {
-    display: none;
-  }
-
-  #estimator .visuals {
-    min-width: 100%;
-  }
-
-  .arrow img {
-    display: none
-  }
-
-  .descriptions, .visuals, #about .descriptions, #about .visuals {
-    max-width: 100%;
-    width: 100%;
-  }
-  
-  .descriptions {
-    order: 1;
-  }
-
-  .visuals {
-    order: 2;
-  }
-
-  #estimator .overview {
-    min-width: 0px;
-  }
-
-  .cfs {
-    width: 160px;
-  }
-
-  .intro {
-    position: relative;
-    background-color: #e84249;
-    height: 100vh;
-  }
-
-  .intro .logo img {
-    height: 20vw;
-  }
-
-  .intro .introdesc {
-    position: absolute;
-    left: 10%;
-    top: 40%;
-  }
-
-  .intro .introdesc .title {
-    font-family: lora-italic;
-    color: #092168;
-    width: 80vw;
-    max-width: 600px;
-    font-size: 1.5em;
-    margin-top: 20px;
-  }
-
-  .intro .introdesc .navigation {
-    font-family: graphik-regular;
-    height: 80px;
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    margin: 10px 0px 10px 0px;
-  }
-
-  .intro .introdesc a {
-    margin: 10px 0px 10px 0px;
-  }
-
-
-  .intro .introdesc .navabout {
-    background-color: #092168;
-    color: white;
-  }
-
-  .intro .introdesc .navestimator {
-    background-color: white;
-  }
-
-  .intro .databasecloud img {
-    height: 70vw;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-
-  .intro .dataworkloadslifecycle img {
-    height: 60vw;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-
-  .intro .arrow img {
-    position: absolute;
-    left: 20%;
-    bottom: 10px;
-  }
-
-  .arrowdown {
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #e84249;
-    position: absolute;
-    left: 20%;
-  }
-
-
-
-
-
-
-  .about {
-    text-align: center;
-  }
-
-  .about img {
-    display: none;
-  }
-
-  .about .abouttext {
-    padding: 120px 20px 80px 20px;
-    max-width: 100%;
-  }
-
-  .about .abouttext1 {
-    font-family: lora;
-    font-size: calc(10vw);
-    color: #092168;
-  }
-
-  .about .abouttext2 {
-    font-family: lora-italic;
-    font-size: 20px;
-    background-color: #092168;
-    color: white;
-    padding: 20px 20px;
-  }
-
-  .about .abouttext3,
-  .about .abouttext4 {
-    font-family: graphik-regular;
-    font-size: 14px;
-    padding-top: 10px;
-  }
-
-  .about .abouttext5 {
-    font-family: graphik-regular;
-    font-size: 10px;
-    padding-top: 10px;
-  }
-
-  .introvideo {
-    position: relative;
-    padding: 0px 5vw 0px 5vw;
-    text-align: center;
-    min-height: none;
-  }
-  
-  .introvideo video{
-    position: inherit;
-    width: 80%;
-  }
-
-  .introvideo .introvideotext {
-    margin-top: 30px;
-    max-width: 100%;
-    text-align: center;
-    float:none
-  }
-  
-  .introvideo .introvideotext1 {
-    border-top: solid 1px #e3dacb;
-    margin: 0px 0px 0px 0px;
-    padding: 20px 0px 20px 0px;
-    font-family: lora;
-    font-size: calc(7vw);
-    color: #092168;
-    float: none;
-  }
-  
-  .introvideo .introvideotext2 {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 20px 0px;
-    font-family: lora;
-    font-size: calc(4vw);
-    color: #e84249;
-  }
-  
-
-  .salesdeck {
-    padding: 20px 20px 20px 20px;
-    line-height: 40px;
-    font-size: 30px;
-  }
-
-  .estimator {
-    position: relative;
-    background-color: white;
-    text-align: center;
-  }
-
-  .estimator img {
-    
-    width: auto;
-    max-width: 90vw;
-    position: relative;
-  }
-
-  .estimator .estimatortext {
-    width: 100%;
-    padding: 20px 20px 20px 00px;
-    margin: 0px 0px;
-    max-width: 800px;
-  }
-
-  .estimator .estimatortext1 {
-    font-family: lora-italic;
-    font-size: 40px;
-    color: #092168;
-  }
-  .estimator .estimatortext2 {
-    font-family: lora-italic;
-    font-size: 40px;
-    color: #e84249;
-  }
-
-  .estimator .estimatortext3 {
-    font-family: graphik-regular;
-    font-size: 20px;
-    color: #222;
-  }
-
-  .estimator .navestimator {
-    width: 150px;
-    text-align: center;
-    font-size: 16px;
-    padding: 10px 30px 10px 30px;
-    font-family: graphik-regular;
-    border-radius: 20px;
-    background-color: #e84249;
-    color: white;
-  }
-
-  .estimator .estimatorcontactslink {
-    max-width: 90vw;
-  }
-
-  .estimator .estimatorcontactslink a {
-    width: 150px;
-    text-align: center;
-    font-size: 14px;
-    padding: 8px 20px 8px 20px;
-    font-family: graphik-regular;
-    border-radius: 20px;
-    background-color: #092168;
-    color: white;
-  }
-
-  .estimator .navestimator a {
-    color: white;
-  }
-
-  .estimator .estimatorbuttonwrapper {
-    margin-top: 30px;
-  }
-
-  .estimator .estimatorcontactslink {
-    margin-top: 60px;
-    text-align: center;
-    font-family: graphik-regular;
-    font-size: 20px;
-    color: #222;
-  }
-
-  .questions {
-    position: relative;
-    background-color: #62bda4;
-    text-align: center;
-    height: 100%;
-  }
-
-  .questions img {
-    display: none;
-    position: relative;
-  }
-
-  .questions .questionsform {
-    padding: 0px 10vw 0px 10vw;
-    padding-top: 60px;
-    max-width: none;
-  }
-
-  .questions .questionstext1 {
-    font-family: lora;
-    font-size: 40px;
-    color: #092168;
-  }
-
-  .questions .questionstext2 {
-    font-family: lora-italic;
-    font-style: italic;
-    font-size: 30px;
-    color: white;
-  }
-
-  .questions form {
-    font-family: graphik-regular;
-    font-size: 12px;
-    margin-top: 40px;
-  }
-
-  .questions input {
-    border: none; /* <-- This thing here */
-    border: solid 1px white;
-    border-radius: 20px;
-    padding: 10px 10px;
-    margin: 10px 0px;
-  }
-
-  .questions input#firstname,
-  .questions input#lastname,
-  .questions input#phone {
-    width: 75vw;
-  }
-
-  .questions input#email {
-    width: 75vw;
-  }
-
-  .questions textarea {
-    width: 75vw;
-    border: solid 1px white;
-    border-radius: 15px;
-    padding: 10px 10px;
-    margin: 10px 0px;
-    resize: none;
-  }
-
-  .questions button {
-    width: 75vw;
-    background-color: #092168;
-    color: white;
-    padding: 10px 0px;
-    resize: none;
-    border: none; /* <-- This thing here */
-    border: solid 1px none;
-    border-radius: 15px;
-    margin-bottom: 50px;
-  }
-
-  .footer {
-    padding: 20px 10vw 20px 10vw;
-  }
-
-
-  .footer .footerlinks {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-  }
-
-  .contactbutton {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-  }
+
+    /* Styles */
+    .title {
+        font-family: lora;
+        font-size: 2.5em;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introheader .content {
+        flex-direction: row;
+        padding: 0px 0px;
+        justify-content: space-between;
+        margin: 0px 5vw;
+    }
+
+    #about .visuals {
+        display: none;
+    }
+
+    #estimator .visuals {
+        min-width: 100%;
+    }
+
+    .arrow img {
+        display: none
+    }
+
+    .descriptions,
+    .visuals,
+    #about .descriptions,
+    #about .visuals {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .descriptions {
+        order: 1;
+    }
+
+    .visuals {
+        order: 2;
+    }
+
+    #estimator .overview {
+        min-width: 0px;
+    }
+
+    .cfs {
+        width: 160px;
+    }
+
+    .intro {
+        position: relative;
+        background-color: #e84249;
+        height: 100vh;
+    }
+
+    .intro .logo img {
+        height: 20vw;
+    }
+
+    .intro .introdesc {
+        position: absolute;
+        left: 10%;
+        top: 40%;
+    }
+
+    .intro .introdesc .title {
+        font-family: lora-italic;
+        color: #092168;
+        width: 80vw;
+        max-width: 600px;
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+
+    .intro .introdesc .navigation {
+        font-family: graphik-regular;
+        height: 80px;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .intro .introdesc a {
+        margin: 10px 0px 10px 0px;
+    }
+
+    .intro .introdesc .navabout {
+        background-color: #092168;
+        color: white;
+    }
+
+    .intro .introdesc .navestimator {
+        background-color: white;
+    }
+
+    .intro .databasecloud img {
+        height: 70vw;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .intro .dataworkloadslifecycle img {
+        height: 60vw;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .intro .arrow img {
+        position: absolute;
+        left: 20%;
+        bottom: 10px;
+    }
+
+    .arrowdown {
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #e84249;
+        position: absolute;
+        left: 20%;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    .about img {
+        display: none;
+    }
+
+    .about .abouttext {
+        padding: 120px 20px 80px 20px;
+        max-width: 100%;
+    }
+
+    .about .abouttext1 {
+        font-family: lora;
+        font-size: calc(10vw);
+        color: #092168;
+    }
+
+    .about .abouttext2 {
+        font-family: lora-italic;
+        font-size: 20px;
+        background-color: #092168;
+        color: white;
+        padding: 20px 20px;
+    }
+
+    .about .abouttext3,
+    .about .abouttext4 {
+        font-family: graphik-regular;
+        font-size: 14px;
+        padding-top: 10px;
+    }
+
+    .about .abouttext5 {
+        font-family: graphik-regular;
+        font-size: 10px;
+        padding-top: 10px;
+    }
+
+    .introvideo {
+        position: relative;
+        padding: 0px 5vw 0px 5vw;
+        text-align: center;
+        min-height: none;
+    }
+
+    .introvideo video {
+        position: inherit;
+        width: 80%;
+    }
+
+    .introvideo .introvideotext {
+        margin-top: 30px;
+        max-width: 100%;
+        text-align: center;
+        float: none
+    }
+
+    .introvideo .introvideotext1 {
+        border-top: solid 1px #e3dacb;
+        margin: 0px 0px 0px 0px;
+        padding: 20px 0px 20px 0px;
+        font-family: lora;
+        font-size: calc(7vw);
+        color: #092168;
+        float: none;
+    }
+
+    .introvideo .introvideotext2 {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 20px 0px;
+        font-family: lora;
+        font-size: calc(4vw);
+        color: #e84249;
+    }
+
+    .salesdeck {
+        padding: 20px 20px 20px 20px;
+        line-height: 40px;
+        font-size: 30px;
+    }
+
+    .estimator {
+        position: relative;
+        background-color: white;
+        text-align: center;
+    }
+
+    .estimator img {
+        width: auto;
+        max-width: 90vw;
+        position: relative;
+    }
+
+    .estimator .estimatortext {
+        width: 100%;
+        padding: 20px 20px 20px 00px;
+        margin: 0px 0px;
+        max-width: 800px;
+    }
+
+    .estimator .estimatortext1 {
+        font-family: lora-italic;
+        font-size: 40px;
+        color: #092168;
+    }
+
+    .estimator .estimatortext2 {
+        font-family: lora-italic;
+        font-size: 40px;
+        color: #e84249;
+    }
+
+    .estimator .estimatortext3 {
+        font-family: graphik-regular;
+        font-size: 20px;
+        color: #222;
+    }
+
+    .estimator .navestimator {
+        width: 150px;
+        text-align: center;
+        font-size: 16px;
+        padding: 10px 30px 10px 30px;
+        font-family: graphik-regular;
+        border-radius: 20px;
+        background-color: #e84249;
+        color: white;
+    }
+
+    .estimator .estimatorcontactslink {
+        max-width: 90vw;
+    }
+
+    .estimator .estimatorcontactslink a {
+        width: 150px;
+        text-align: center;
+        font-size: 14px;
+        padding: 8px 20px 8px 20px;
+        font-family: graphik-regular;
+        border-radius: 20px;
+        background-color: #092168;
+        color: white;
+    }
+
+    .estimator .navestimator a {
+        color: white;
+    }
+
+    .estimator .estimatorbuttonwrapper {
+        margin-top: 30px;
+    }
+
+    .estimator .estimatorcontactslink {
+        margin-top: 60px;
+        text-align: center;
+        font-family: graphik-regular;
+        font-size: 20px;
+        color: #222;
+    }
+
+    .questions {
+        position: relative;
+        background-color: #62bda4;
+        text-align: center;
+        height: 100%;
+    }
+
+    .questions img {
+        display: none;
+        position: relative;
+    }
+
+    .questions .questionsform {
+        padding: 0px 10vw 0px 10vw;
+        padding-top: 60px;
+        max-width: none;
+    }
+
+    .questions .questionstext1 {
+        font-family: lora;
+        font-size: 40px;
+        color: #092168;
+    }
+
+    .questions .questionstext2 {
+        font-family: lora-italic;
+        font-style: italic;
+        font-size: 30px;
+        color: white;
+    }
+
+    .questions form {
+        font-family: graphik-regular;
+        font-size: 12px;
+        margin-top: 40px;
+    }
+
+    .questions input {
+        border: none;
+        /* <-- This thing here */
+        border: solid 1px white;
+        border-radius: 20px;
+        padding: 10px 10px;
+        margin: 10px 0px;
+    }
+
+    .questions input#firstname,
+    .questions input#lastname,
+    .questions input#phone {
+        width: 75vw;
+    }
+
+    .questions input#email {
+        width: 75vw;
+    }
+
+    .questions textarea {
+        width: 75vw;
+        border: solid 1px white;
+        border-radius: 15px;
+        padding: 10px 10px;
+        margin: 10px 0px;
+        resize: none;
+    }
+
+    .questions button {
+        width: 75vw;
+        background-color: #092168;
+        color: white;
+        padding: 10px 0px;
+        resize: none;
+        border: none;
+        /* <-- This thing here */
+        border: solid 1px none;
+        border-radius: 15px;
+        margin-bottom: 50px;
+    }
+
+    .footer {
+        padding: 20px 10vw 20px 10vw;
+    }
+
+    .footer .footerlinks {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .contactbutton {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+    }
 }
 
 
 /* Smartphones (portrait and landscape) ----------- */
+
 @media only screen and (min-width: 0px) and (max-width: 400px) and (orientation: portrait) {
-  /* Styles */
-  
 
-  .arrow img {
-    display: none
-  }
+    /* Styles */
+    .arrow img {
+        display: none
+    }
 
-
-  .intro .introdesc .title {
-    font-family: lora-italic;
-    color: #092168;
-    width: 80vw;
-    max-width: 600px;
-    font-size: 1.2em;
-    margin-top: 20px;
-  }
-
+    .intro .introdesc .title {
+        font-family: lora-italic;
+        color: #092168;
+        width: 80vw;
+        max-width: 600px;
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
 }
 
+
 /* Smartphones (portrait and landscape) ----------- */
+
 @media only screen and (min-height: 0px) and (max-height: 600px) and (orientation: landscape) {
+    .intro .arrow img {
+        display: none;
+    }
 
-  .intro .arrow img {
-    display: none;
-  }
+    .introvideo {
+        position: relative;
+        padding: 40px 5vw 40px 5vw;
+        min-height: 230px;
+        border: solid 1px rgba(227, 218, 203, 0.5);
+    }
 
-  .introvideo {
-    position: relative;
-    padding: 40px 5vw 40px 5vw;
-    min-height: 230px;
-    border: solid 1px rgba(227, 218, 203, 0.5);
+    .introvideo video {
+        width: 40%;
+        max-width: 400px;
+    }
 }
-  
-  .introvideo video{
-    width: 40%;
-    max-width: 400px;
-  }
 
-}
 
 /* Smartphones (portrait and landscape) ----------- */
+
 @media only screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
-  /* Styles */
 
-  .intro {
-    position: relative;
-    background-color: #e84249;
-    height: 100vh;
-  }
+    /* Styles */
+    .intro {
+        position: relative;
+        background-color: #e84249;
+        height: 100vh;
+    }
 
-  .intro .logo img {
-    height: 10vw;
-  }
+    .intro .logo img {
+        height: 10vw;
+    }
 
+    .arrow img {
+        display: none
+    }
 
-  .arrow img {
-    display: none
-  }
+    .intro .introdesc {
+        position: absolute;
+        left: 10%;
+        top: 20%;
+    }
 
+    .intro .introdesc .title {
+        font-family: lora-italic;
+        color: #092168;
+        width: 80vw;
+        max-width: 600px;
+        font-size: 2em;
+        margin-top: 20px;
+    }
 
-  .intro .introdesc {
-    position: absolute;
-    left: 10%;
-    top: 20%;
-  }
+    .intro .introdesc .navigation {
+        font-family: graphik-regular;
+        height: 80px;
+        display: flex;
+        align-content: center;
+        flex-direction: row;
+        margin: 10px 0px 10px 0px;
+    }
 
-  .intro .introdesc .title {
-    font-family: lora-italic;
-    color: #092168;
-    width: 80vw;
-    max-width: 600px;
-    font-size: 2em;
-    margin-top: 20px;
-  }
+    .intro .introdesc a {
+        margin: 10px 0px 10px 0px;
+    }
 
-  .intro .introdesc .navigation {
-    font-family: graphik-regular;
-    height: 80px;
-    display: flex;
-    align-content: center;
-    flex-direction: row;
-    margin: 10px 0px 10px 0px;
-  }
+    .intro .introdesc .navabout {
+        background-color: #092168;
+        color: white;
+    }
 
-  .intro .introdesc a {
-    margin: 10px 0px 10px 0px;
-  }
+    .intro .introdesc .navestimator {
+        background-color: white;
+    }
 
+    .intro .databasecloud img {
+        height: 30vw;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
 
-  .intro .introdesc .navabout {
-    background-color: #092168;
-    color: white;
-  }
+    .intro .dataworkloadslifecycle img {
+        height: 50vh;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
 
-  .intro .introdesc .navestimator {
-    background-color: white;
-  }
+    .intro .arrow img {
+        display: none;
+        position: absolute;
+        left: 20%;
+        bottom: 10px;
+    }
 
-  .intro .databasecloud img {
-    height: 30vw;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
+    .introheader .content {
+        opacity: 0;
+        padding: 5px 20px 5px 20px;
+    }
 
-  .intro .dataworkloadslifecycle img {
-    height: 50vh;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-  
+    .introheader .content span {
+        line-height: 0px;
+    }
 
-  .intro .arrow img {
-    display: none;
-    position: absolute;
-    left: 20%;
-    bottom: 10px;
-  }
+    .introheader .content img {
+        width: 55px;
+    }
 
-  .introheader .content {
-    opacity: 0;
-    padding: 5px 20px 5px 20px;
-  }
+    .introheader .button.navestimator {
+        font-size: 12px;
+        padding: 5px 30px 5px 30px;
+        font-family: graphik-regular;
+        border-radius: 20px;
+        background-color: white;
+        float: right;
+        margin-top: 5px;
+    }
 
-  .introheader .content span {
-    line-height: 0px;
-  }
+    .arrowdown {
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #e84249;
+        position: absolute;
+        left: 20%;
+    }
 
-  .introheader .content img {
-    width: 55px;
-  }
+    .about {
+        text-align: center;
+    }
 
-  .introheader .button.navestimator {
-    font-size: 12px;
-    padding: 5px 30px 5px 30px;
-    font-family: graphik-regular;
-    border-radius: 20px;
-    background-color: white;
-    float: right;
-    margin-top: 5px;
-  }
+    .about img {
+        display: none;
+    }
 
-  .arrowdown {
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #e84249;
-    position: absolute;
-    left: 20%;
-  }
+    .about .abouttext {
+        padding: 100px 20px 30px 20px;
+        max-width: 100%;
+    }
 
-  .about {
-    text-align: center;
-  }
+    .about .abouttext1 {
+        font-family: lora;
+        font-size: calc(4vw);
+        color: #092168;
+    }
 
-  .about img {
-    display: none;
-  }
+    .about .abouttext2 {
+        font-family: lora-italic;
+        font-size: 20px;
+        background-color: #092168;
+        color: white;
+        padding: 1px 10px;
+    }
 
-  .about .abouttext {
-    padding: 100px 20px 30px 20px;
-    max-width: 100%;
-  }
+    .about .abouttext3,
+    .about .abouttext4 {
+        font-family: graphik-regular;
+        font-size: 14px;
+        padding-top: 10px;
+    }
 
-  .about .abouttext1 {
-    font-family: lora;
-    font-size: calc(4vw);
-    color: #092168;
-  }
+    .about .abouttext5 {
+        font-family: graphik-regular;
+        font-size: 10px;
+        padding-top: 10px;
+    }
 
-  .about .abouttext2 {
-    font-family: lora-italic;
-    font-size: 20px;
-    background-color: #092168;
-    color: white;
-    padding: 1px 10px;
-  }
+    .introvideo {
+        padding: 50px 10vw 50px 10vw;
+        text-align: center;
+    }
 
-  .about .abouttext3,
-  .about .abouttext4 {
-    font-family: graphik-regular;
-    font-size: 14px;
-    padding-top: 10px;
-  }
+    .introvideo video {
+        width: 50%;
+        max-width: 300px;
+    }
 
-  .about .abouttext5 {
-    font-family: graphik-regular;
-    font-size: 10px;
-    padding-top: 10px;
-  }
+    .introvideo .introvideotext1 {
+        border-top: solid 1px #e3dacb;
+        margin: 0px 0px 0px 0px;
+        padding: 40px 0px 20px 0px;
+        font-family: lora;
+        font-size: calc(3vw);
+        color: #092168;
+    }
 
-  .introvideo {
+    .introvideo .introvideotext2 {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 20px 0px;
+        font-family: lora;
+        font-size: calc(2vw);
+        color: #e84249;
+    }
 
-    padding: 50px 10vw 50px 10vw;
-    text-align: center;
-  }
-  
-  .introvideo video{
-    width: 50%;
-    max-width: 300px;
-  }
-  
-  .introvideo .introvideotext1 {
-    border-top: solid 1px #e3dacb;
-    margin: 0px 0px 0px 0px;
-    padding: 40px 0px 20px 0px;
-    font-family: lora;
-    font-size: calc(3vw);
-    color: #092168;
-  }
-  
-  
-  .introvideo .introvideotext2 {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 20px 0px;
-    font-family: lora;
-    font-size: calc(2vw);
-    color: #e84249;
-  }
-  
+    .salesdeck {
+        padding: 20px 20px 20px 20px;
+        line-height: 40px;
+        font-size: 30px;
+    }
 
-  .salesdeck {
-    padding: 20px 20px 20px 20px;
-    line-height: 40px;
-    font-size: 30px;
-  }
+    .estimator {
+        position: relative;
+        background-color: white;
+        text-align: center;
+    }
 
-  .estimator {
-    position: relative;
-    background-color: white;
-    text-align: center;
-  }
+    .estimator img {
+        display: none;
+        width: 90vw;
+        max-width: 90vw;
+        position: relative;
+    }
 
-  .estimator img {
-    display: none;
-    width: 90vw;
-    max-width: 90vw;
-    position: relative;
-  }
+    .estimator .estimatortext {
+        width: 100%;
+        padding: 20px 20px 20px 00px;
+        margin: 0px 0px;
+        max-width: 800px;
+    }
 
-  .estimator .estimatortext {
-    width: 100%;
-    padding: 20px 20px 20px 00px;
-    margin: 0px 0px;
-    max-width: 800px;
-  }
+    .estimator .estimatortext1 {
+        font-family: lora-italic;
+        font-size: 40px;
+        color: #092168;
+    }
 
-  .estimator .estimatortext1 {
-    font-family: lora-italic;
-    font-size: 40px;
-    color: #092168;
-  }
-  .estimator .estimatortext2 {
-    font-family: lora-italic;
-    font-size: 40px;
-    color: #e84249;
-  }
+    .estimator .estimatortext2 {
+        font-family: lora-italic;
+        font-size: 40px;
+        color: #e84249;
+    }
 
-  .estimator .estimatortext3 {
-    font-family: graphik-regular;
-    font-size: 20px;
-    color: #222;
-  }
+    .estimator .estimatortext3 {
+        font-family: graphik-regular;
+        font-size: 20px;
+        color: #222;
+    }
 
-  .estimator .navestimator {
-    width: 150px;
-    text-align: center;
-    font-size: 16px;
-    padding: 10px 30px 10px 30px;
-    font-family: graphik-regular;
-    border-radius: 20px;
-    background-color: #e84249;
-    color: white;
-  }
+    .estimator .navestimator {
+        width: 150px;
+        text-align: center;
+        font-size: 16px;
+        padding: 10px 30px 10px 30px;
+        font-family: graphik-regular;
+        border-radius: 20px;
+        background-color: #e84249;
+        color: white;
+    }
 
-  .estimator .estimatorcontactslink {
-  }
+    .estimator .estimatorcontactslink {}
 
-  .estimator .estimatorcontactslink a {
-    width: 150px;
-    text-align: center;
-    font-size: 14px;
-    padding: 8px 20px 8px 20px;
-    font-family: graphik-regular;
-    border-radius: 20px;
-    background-color: #092168;
-    color: white;
-  }
+    .estimator .estimatorcontactslink a {
+        width: 150px;
+        text-align: center;
+        font-size: 14px;
+        padding: 8px 20px 8px 20px;
+        font-family: graphik-regular;
+        border-radius: 20px;
+        background-color: #092168;
+        color: white;
+    }
 
-  .estimator .navestimator a {
-    color: white;
-  }
+    .estimator .navestimator a {
+        color: white;
+    }
 
-  .estimator .estimatorbuttonwrapper {
-    margin-top: 30px;
-  }
+    .estimator .estimatorbuttonwrapper {
+        margin-top: 30px;
+    }
 
-  .estimator .estimatorcontactslink {
-    margin-top: 30px;
-    text-align: center;
-    font-family: graphik-regular;
-    font-size: 20px;
-    color: #222;
-  }
+    .estimator .estimatorcontactslink {
+        margin-top: 30px;
+        text-align: center;
+        font-family: graphik-regular;
+        font-size: 20px;
+        color: #222;
+    }
 
-  .questions {
-    position: relative;
-    background-color: #62bda4;
-    text-align: center;
-    height: 100%;
-  }
+    .questions {
+        position: relative;
+        background-color: #62bda4;
+        text-align: center;
+        height: 100%;
+    }
 
-  .questions img {
-    display: none;
-    position: relative;
-  }
+    .questions img {
+        display: none;
+        position: relative;
+    }
 
-  .questions .questionsform {
-    padding: 0px 10vw 0px 10vw;
-    padding-top: 60px;
-    max-width: none;
-  }
+    .questions .questionsform {
+        padding: 0px 10vw 0px 10vw;
+        padding-top: 60px;
+        max-width: none;
+    }
 
-  .questions .questionstext1 {
-    font-family: lora;
-    font-size: 40px;
-    color: #092168;
-  }
+    .questions .questionstext1 {
+        font-family: lora;
+        font-size: 40px;
+        color: #092168;
+    }
 
-  .questions .questionstext2 {
-    font-family: lora-italic;
-    font-style: italic;
-    font-size: 30px;
-    color: white;
-  }
+    .questions .questionstext2 {
+        font-family: lora-italic;
+        font-style: italic;
+        font-size: 30px;
+        color: white;
+    }
 
-  .questions form {
-    font-family: graphik-regular;
-    font-size: 12px;
-    margin-top: 40px;
-  }
+    .questions form {
+        font-family: graphik-regular;
+        font-size: 12px;
+        margin-top: 40px;
+    }
 
-  .questions input {
-    border: none; /* <-- This thing here */
-    border: solid 1px white;
-    border-radius: 20px;
-    padding: 10px 10px;
-    margin: 10px 0px;
-  }
+    .questions input {
+        border: none;
+        /* <-- This thing here */
+        border: solid 1px white;
+        border-radius: 20px;
+        padding: 10px 10px;
+        margin: 10px 0px;
+    }
 
-  .questions input#firstname,
-  .questions input#lastname,
-  .questions input#phone {
-    width: 75vw;
-  }
+    .questions input#firstname,
+    .questions input#lastname,
+    .questions input#phone {
+        width: 75vw;
+    }
 
-  .questions input#email {
-    width: 75vw;
-  }
+    .questions input#email {
+        width: 75vw;
+    }
 
-  .questions textarea {
-    width: 75vw;
-    border: solid 1px white;
-    border-radius: 15px;
-    padding: 10px 10px;
-    margin: 10px 0px;
-    resize: none;
-  }
+    .questions textarea {
+        width: 75vw;
+        border: solid 1px white;
+        border-radius: 15px;
+        padding: 10px 10px;
+        margin: 10px 0px;
+        resize: none;
+    }
 
-  .questions button {
-    width: 75vw;
-    background-color: #092168;
-    color: white;
-    padding: 10px 0px;
-    resize: none;
-    border: none; /* <-- This thing here */
-    border: solid 1px none;
-    border-radius: 15px;
-    margin-bottom: 50px;
-  }
+    .questions button {
+        width: 75vw;
+        background-color: #092168;
+        color: white;
+        padding: 10px 0px;
+        resize: none;
+        border: none;
+        /* <-- This thing here */
+        border: solid 1px none;
+        border-radius: 15px;
+        margin-bottom: 50px;
+    }
 
-  .footer {
-    padding: 20px 10vw 20px 10vw;
-  }
+    .footer {
+        padding: 20px 10vw 20px 10vw;
+    }
 
-  .contactbutton {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-  }
+    .contactbutton {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+    }
 }
+
 
 /* Smartphones (portrait) ----------- */
+
 @media only screen and (max-width: 320px) {
-  /* Styles */
+    /* Styles */
 }
+
 
 /* iPads (portrait and landscape) ----------- */
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-  /* Styles */
+    /* Styles */
+    #section-1 .highlight,
+    #section-1 .text,
+    #section-1 .title,
+    #section-1 .subtitle,
+    #section-3 .highlight,
+    #section-3 .text,
+    #section-3 .title,
+    #section-3 .subtitle,
+    #section-5 .highlight,
+    #section-5 .text,
+    #section-5 .title,
+    #section-5 .subtitle,
+    #section-7 .highlight,
+    #section-7 .text,
+    #section-7 .title,
+    #section-7 .subtitle,
+    #section-9 .highlight,
+    #section-9 .text,
+    #section-9 .title,
+    #section-9 .subtitle {
+        text-align: right;
+    }
 
-  #section-1 .highlight, #section-1 .text, #section-1 .title, #section-1 .subtitle,
-  #section-3 .highlight, #section-3 .text, #section-3 .title, #section-3 .subtitle,
-  #section-5 .highlight, #section-5 .text, #section-5 .title, #section-5 .subtitle,
-  #section-7 .highlight, #section-7 .text, #section-7 .title, #section-7 .subtitle,
-  #section-9 .highlight, #section-9 .text, #section-9 .title, #section-9 .subtitle {
-    text-align: right;
-  }
-  
-  #section-2 .highlight, #section-2 .text, #section-2 .title, #section-2 .subtitle,
-  #section-4 .highlight, #section-4 .text, #section-4 .title, #section-4 .subtitle,
-  #section-6 .highlight, #section-6 .text, #section-6 .title, #section-6 .subtitle,
-  #section-8 .highlight, #section-8 .text, #section-8 .title, #section-8 .subtitle,
-  #about .highlight, #about .text,  #about .title,  #about .subtitle {
-    text-align: left;
-  }
-  
+    #section-2 .highlight,
+    #section-2 .text,
+    #section-2 .title,
+    #section-2 .subtitle,
+    #section-4 .highlight,
+    #section-4 .text,
+    #section-4 .title,
+    #section-4 .subtitle,
+    #section-6 .highlight,
+    #section-6 .text,
+    #section-6 .title,
+    #section-6 .subtitle,
+    #section-8 .highlight,
+    #section-8 .text,
+    #section-8 .title,
+    #section-8 .subtitle,
+    #about .highlight,
+    #about .text,
+    #about .title,
+    #about .subtitle {
+        text-align: left;
+    }
 }
+
 
 /* iPads (landscape) ----------- */
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  /* Styles */
 
-  #section-1 .highlight, #section-1 .text, #section-1 .title, #section-1 .subtitle,
-  #section-3 .highlight, #section-3 .text, #section-3 .title, #section-3 .subtitle,
-  #section-5 .highlight, #section-5 .text, #section-5 .title, #section-5 .subtitle,
-  #section-7 .highlight, #section-7 .text, #section-7 .title, #section-7 .subtitle,
-  #section-9 .highlight, #section-9 .text, #section-9 .title, #section-9 .subtitle {
-    text-align: right;
-  }
-  
-  #section-2 .highlight, #section-2 .text, #section-2 .title, #section-2 .subtitle,
-  #section-4 .highlight, #section-4 .text, #section-4 .title, #section-4 .subtitle,
-  #section-6 .highlight, #section-6 .text, #section-6 .title, #section-6 .subtitle,
-  #section-8 .highlight, #section-8 .text, #section-8 .title, #section-8 .subtitle,
-  #about .highlight, #about .text,  #about .title,  #about .subtitle {
-    text-align: left;
-  }
-  
-  .intro {
-    position: relative;
-    background-color: #e84249;
-    height: 100vh;
-  }
+    /* Styles */
+    #section-1 .highlight,
+    #section-1 .text,
+    #section-1 .title,
+    #section-1 .subtitle,
+    #section-3 .highlight,
+    #section-3 .text,
+    #section-3 .title,
+    #section-3 .subtitle,
+    #section-5 .highlight,
+    #section-5 .text,
+    #section-5 .title,
+    #section-5 .subtitle,
+    #section-7 .highlight,
+    #section-7 .text,
+    #section-7 .title,
+    #section-7 .subtitle,
+    #section-9 .highlight,
+    #section-9 .text,
+    #section-9 .title,
+    #section-9 .subtitle {
+        text-align: right;
+    }
 
-  .intro .logo img {
-    height: 10vw;
-  }
+    #section-2 .highlight,
+    #section-2 .text,
+    #section-2 .title,
+    #section-2 .subtitle,
+    #section-4 .highlight,
+    #section-4 .text,
+    #section-4 .title,
+    #section-4 .subtitle,
+    #section-6 .highlight,
+    #section-6 .text,
+    #section-6 .title,
+    #section-6 .subtitle,
+    #section-8 .highlight,
+    #section-8 .text,
+    #section-8 .title,
+    #section-8 .subtitle,
+    #about .highlight,
+    #about .text,
+    #about .title,
+    #about .subtitle {
+        text-align: left;
+    }
 
-  .intro .introdesc {
-    position: absolute;
-    left: 10%;
-    top: 60%;
-  }
+    .intro {
+        position: relative;
+        background-color: #e84249;
+        height: 100vh;
+    }
 
-  .intro .introdesc .title {
-    font-family: lora-italic;
-    color: #092168;
-    width: 80vw;
-    max-width: 600px;
-    font-size: 1.5em;
-    margin-top: 20px;
-  }
+    .intro .logo img {
+        height: 10vw;
+    }
 
-  .intro .introdesc .navigation {
-    font-family: graphik-regular;
-    height: 80px;
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    margin: 10px 0px 10px 0px;
-  }
+    .intro .introdesc {
+        position: absolute;
+        left: 10%;
+        top: 60%;
+    }
 
-  .intro .introdesc a {
-    margin: 10px 0px 10px 0px;
-  }
+    .intro .introdesc .title {
+        font-family: lora-italic;
+        color: #092168;
+        width: 80vw;
+        max-width: 600px;
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
 
-  .intro .introdesc .navabout {
-    background-color: #092168;
-    color: white;
-  }
+    .intro .introdesc .navigation {
+        font-family: graphik-regular;
+        height: 80px;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        margin: 10px 0px 10px 0px;
+    }
 
-  .intro .introdesc .navestimator {
-    background-color: white;
-  }
+    .intro .introdesc a {
+        margin: 10px 0px 10px 0px;
+    }
 
-  .intro .databasecloud img {
-    height: 70vw;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
+    .intro .introdesc .navabout {
+        background-color: #092168;
+        color: white;
+    }
 
-  .intro .arrow img {
-    position: absolute;
-    left: 20%;
-    bottom: 10px;
-  }
+    .intro .introdesc .navestimator {
+        background-color: white;
+    }
 
-  .about .abouttext {
-    padding: 100px 0px 100px 50vw;
-    max-width: 40vw;
-  }
+    .intro .databasecloud img {
+        height: 70vw;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
 
-  .about img {
-    position: absolute;
-    top: 75px;
-    left: 8vw;
-    width: 50vw;
-    max-width: 900px;
-  }
+    .intro .arrow img {
+        position: absolute;
+        left: 20%;
+        bottom: 10px;
+    }
 
+    .about .abouttext {
+        padding: 100px 0px 100px 50vw;
+        max-width: 40vw;
+    }
 
-  
-  .introvideo {
-    position: relative;
-    padding: 40px 5vw 40px 5vw;
-    min-height: 230px;
-    border: solid 1px rgba(227, 218, 203, 0.5);
+    .about img {
+        position: absolute;
+        top: 75px;
+        left: 8vw;
+        width: 50vw;
+        max-width: 900px;
+    }
+
+    .introvideo {
+        position: relative;
+        padding: 40px 5vw 40px 5vw;
+        min-height: 230px;
+        border: solid 1px rgba(227, 218, 203, 0.5);
+    }
+
+    .introvideo video {
+        width: 40%;
+        max-width: 400px;
+    }
+
+    .introvideo .introvideotext1 {
+        margin: 0px 0px 0px 0px;
+        padding: 40px 0px 20px 0px;
+        font-family: lora;
+        font-size: calc(3vw);
+        color: #092168;
+    }
+
+    .introvideo .introvideotext2 {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 20px 0px;
+        font-family: lora;
+        font-size: calc(2vw);
+        color: #e84249;
+    }
+
+    .estimator .estimatortext {
+        width: 40vw;
+        margin: 0px 0px 0px 0px;
+        max-width: 800px;
+    }
+
+    .estimator .estimatorcontactslink {
+        margin-top: 50px;
+        text-align: center;
+        font-family: graphik-regular;
+        font-size: 20px;
+        color: #222;
+    }
 }
-  
-  .introvideo video{
-    width: 40%;
-    max-width: 400px;
-  }
-  
-  .introvideo .introvideotext1 {
-    margin: 0px 0px 0px 0px;
-    padding: 40px 0px 20px 0px;
-    font-family: lora;
-    font-size: calc(3vw);
-    color: #092168;
-  }
-  
-  
-  .introvideo .introvideotext2 {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 20px 0px;
-    font-family: lora;
-    font-size: calc(2vw);
-    color: #e84249;
-  }
-  
 
-  .estimator .estimatortext {
-    width: 40vw;
-    margin: 0px 0px 0px 0px;
-    max-width: 800px;
-  }
-
-  .estimator .estimatorcontactslink {
-    margin-top: 50px;
-    text-align: center;
-    font-family: graphik-regular;
-    font-size: 20px;
-    color: #222;
-  }
-}
 
 /* iPads (portrait) ----------- */
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  /* Styles */
+    /* Styles */
 }
+
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width: 768px) {
-  /* Styles */
 
-  #section-1 .highlight, #section-1 .text, #section-1 .title, #section-1 .subtitle,
-  #section-3 .highlight, #section-3 .text, #section-3 .title, #section-3 .subtitle,
-  #section-5 .highlight, #section-5 .text, #section-5 .title, #section-5 .subtitle,
-  #section-7 .highlight, #section-7 .text, #section-7 .title, #section-7 .subtitle,
-  #section-9 .highlight, #section-9 .text, #section-9 .title, #section-9 .subtitle {
-    text-align: right;
-  }
-  
-  #section-2 .highlight, #section-2 .text, #section-2 .title, #section-2 .subtitle,
-  #section-4 .highlight, #section-4 .text, #section-4 .title, #section-4 .subtitle,
-  #section-6 .highlight, #section-6 .text, #section-6 .title, #section-6 .subtitle,
-  #section-8 .highlight, #section-8 .text, #section-8 .title, #section-8 .subtitle,
-  #about .highlight, #about .text,  #about .title,  #about .subtitle {
-    text-align: left;
-  }
+@media only screen and (min-width: 768px) {
+
+    /* Styles */
+    #section-1 .highlight,
+    #section-1 .text,
+    #section-1 .title,
+    #section-1 .subtitle,
+    #section-3 .highlight,
+    #section-3 .text,
+    #section-3 .title,
+    #section-3 .subtitle,
+    #section-5 .highlight,
+    #section-5 .text,
+    #section-5 .title,
+    #section-5 .subtitle,
+    #section-7 .highlight,
+    #section-7 .text,
+    #section-7 .title,
+    #section-7 .subtitle,
+    #section-9 .highlight,
+    #section-9 .text,
+    #section-9 .title,
+    #section-9 .subtitle {
+        text-align: right;
+    }
+
+    #section-2 .highlight,
+    #section-2 .text,
+    #section-2 .title,
+    #section-2 .subtitle,
+    #section-4 .highlight,
+    #section-4 .text,
+    #section-4 .title,
+    #section-4 .subtitle,
+    #section-6 .highlight,
+    #section-6 .text,
+    #section-6 .title,
+    #section-6 .subtitle,
+    #section-8 .highlight,
+    #section-8 .text,
+    #section-8 .title,
+    #section-8 .subtitle,
+    #about .highlight,
+    #about .text,
+    #about .title,
+    #about .subtitle {
+        text-align: left;
+    }
 }
+
 
 /* Large screens ----------- */
+
 @media only screen and (min-width: 1824px) {
-  /* Styles */
+    /* Styles */
 }
 
+
 /* iPhone 4 ----------- */
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (min-device-pixel-ratio: 1.5) {
-  /* Styles */
+only screen and (min-device-pixel-ratio: 1.5) {
+    /* Styles */
 }
