@@ -4,6 +4,6 @@ https://www.cookiepolicygenerator.com/cookie-policy-generator/
 
 Google analytics integrated 
 
-Cokkies acceptance bacause of google analtics
+Cookies acceptance because of google analtics
 
 
