@@ -834,7 +834,13 @@ function updateDisplay() {
 						}
 						factor *= local_factor;
 					}
-					num_workloads_pa += factor;
+          let factor2 = 1;
+          if (j==0) {
+              factor2 = 0.75;
+          } else if (j==2) {
+              factor2 = 1.25;
+          }
+					num_workloads_pa += factor * factor2;
 				}
             }
         
