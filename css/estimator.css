@@ -793,6 +793,7 @@
 
   #estimatorsection .mob-b {
     display: block !important;
+
   }
   #estimatorsection .mob-g {
     display: grid !important;
@@ -803,6 +804,12 @@
 
     #estimatorsection .des-b, .des-g, .des-f {
     display: none !important;
+    
+    font-family: lora-italic;
+    font-size: 2em;
+    line-height: normal;
+    color: #e84249;
+    margin-bottom: 10px;
   }
 
 }
