@@ -144,6 +144,15 @@
   background-color: var(--c, #000000);
 }
 
+#estimatorsection .selected-icon {
+  font-size: 22px;
+  position: absolute;
+  color: var(--c, #000000);
+  background-color: #ffffff;
+  display: none;
+  border-radius: 50%;
+}
+
 #estimatorsection .usecase:hover {
   /* border: 1px solid var(--c, #000000); */
   box-shadow: 0 0 8px rgb(12 10 10 / 80%);

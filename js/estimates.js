@@ -647,8 +647,11 @@ function loadingTasks() {
             if (data[j]["category"] == cats[i]["short"]) {
                 cat_count++;
                 c += `
-                    <div class="usecase clickable" id="case-`+j+`" onclick="openAdder('`+j+`')" style="--c: `+cats[i]["colour"]+`;">
-                        `+data[j]["name"]+`
+                    <div>
+                        <i style="--c: `+cats[i]["colour"]+`;" id="si-`+j+`" class="selected-icon fas fa-check-circle"></i>
+                        <div class="usecase clickable" id="case-`+j+`" onclick="openAdder('`+j+`')" style="--c: `+cats[i]["colour"]+`;">
+                            `+data[j]["name"]+`
+                        </div>
                     </div>
                     `;
             }
@@ -798,18 +801,22 @@ function updateDisplay() {
     for (let i=0; i<usecases.length; i++) {
 
         // Colour the usecase boxes as appropriate
-        $("#case-"+i+", #minicase-"+i).removeClass("selected");
+        // $("#case-"+i+", #minicase-"+i).removeClass("selected");
+        $("#minicase-"+i).removeClass("selected");
+        $("#si-"+i).css("display", "none");
         if (data[i]["base"] == "time") {
             for (let j=0; j<usecases[i].length; j++) {
                 if (Math.min(...usecases[i][j]) > 0) {
-                    $("#case-"+i+", #minicase-"+i).addClass("selected");
-                    // $("#cat-"+data[i]["category"]).addClass("selected");
+                    // $("#case-"+i+", #minicase-"+i).addClass("selected");
+                    $("#minicase-"+i).addClass("selected");
+                    $("#si-"+i).css("display", "block");
                 }
             }
         } else {
             if (usecases[i] > 0) {
-                $("#case-"+i+", #minicase-"+i).addClass("selected");
-                // $("#cat-"+data[i]["category"]).addClass("selected");
+                // $("#case-"+i+", #minicase-"+i).addClass("selected");
+                $("#minicase-"+i).addClass("selected");
+                $("#si-"+i).css("display", "block");
             }
         }
 
@@ -834,7 +841,13 @@ function updateDisplay() {
 						}
 						factor *= local_factor;
 					}
-					num_workloads_pa += factor;
+                    let factor2 = 1;
+                    if (j==0) {
+                        factor2 = 0.75;
+                    } else if (j==2) {
+                        factor2 = 1.25;
+                    }
+					num_workloads_pa += factor * factor2;
 				}
             }
         
