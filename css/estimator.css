@@ -219,7 +219,7 @@
   width: 540px;
   font-size: 13px;
   margin-bottom: 30px;
-  padding: 15px 15px 15px 15px;
+  padding: 15px 0px 15px 0px;
 }
 
 #estimatorsection .clickable:hover, #estimatorsection .button:hover {
@@ -804,12 +804,6 @@
 
     #estimatorsection .des-b, .des-g, .des-f {
     display: none !important;
-    
-    font-family: lora-italic;
-    font-size: 2em;
-    line-height: normal;
-    color: #e84249;
-    margin-bottom: 10px;
   }
 
 }
