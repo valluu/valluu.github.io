@@ -627,7 +627,8 @@ video {
 /** Sales Deck **/
 
 .visuals img {
-  max-width: 400px;
+  max-width: 300px;
+  margin: 40px;
 }
 
 /** Timeline **/
@@ -743,4 +744,83 @@ video {
 
 #color-9 {
   background-color: #e3dacb;
+}
+
+#section-8.diagram .title {
+  text-align: center;
+}
+
+.flow-diagram {
+  margin-bottom: 40px;
+}
+
+.flow-diagram img {
+  width: 100%;
+}
+
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.cards-container .card {
+  max-width: 400px;
+}
+
+.card-title {
+  font-family: lora-italic;
+  font-size: 2em;
+  line-height: normal;
+  color: #e84249;
+  margin: 20px 0px 20px 0px;
+}
+
+
+.card-image {
+  min-height: 200px;
+  vertical-align: middle;
+  display: none;
+}
+
+.card-image img {
+  width: 200px
+}
+
+.card-subtitle {
+  font-family: lora;
+  font-size: 1.5em;
+  line-height: normal;
+  color: #092168;
+  margin: 0px 0px 10px 0px;
+}
+
+.card-details {
+  font-family: lora-italic;
+  font-size: 0.9em;
+  line-height: normal;
+  color: rgb(232, 66, 73);
+  margin-bottom: 10px;
+}
+
+.card-details span {
+  background: whitesmoke;
+  border-radius: 20px;
+  padding: 3px;
+  line-height: 30px;
+}
+
+.card-uses {
+  font-family: lora;
+  font-size: 0.9em;
+  line-height: normal;
+  color: #092168;
+  margin-bottom: 10px;
+}
+
+.card-uses p {
+  color: #222;
+  margin: 2px;
 }
