@@ -746,7 +746,7 @@ video {
   background-color: #e3dacb;
 }
 
-#section-8.diagram .title {
+#section-9.diagram .title {
   text-align: center;
 }
 
@@ -808,7 +808,7 @@ video {
 .card-details span {
   background: whitesmoke;
   border-radius: 20px;
-  padding: 3px;
+  padding: 3px 10px;
   line-height: 30px;
 }
 
