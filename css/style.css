@@ -41,7 +41,7 @@ section {
   font-family: lora;
   font-size: 3em;
   line-height: normal;
-  color: #092168;
+  color: #e84249 ;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -50,7 +50,7 @@ section {
   font-family: lora-italic;
   font-size: 2em;
   line-height: normal;
-  color: #e84249;
+  color: #092168;
   margin-bottom: 10px;
 }
 
@@ -78,7 +78,7 @@ section {
 }
 
 .notes {
-  font-size: 10px;
+  font-size: 12px;
   margin-bottom: 20px;
 }
 
@@ -746,11 +746,12 @@ video {
   background-color: #e3dacb;
 }
 
-#section-3.diagram .title {
+#section-4.diagram .title {
   text-align: center;
 }
 
 .flow-diagram {
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 
@@ -774,7 +775,7 @@ video {
   font-family: lora-italic;
   font-size: 2em;
   line-height: normal;
-  color: #e84249;
+  color: #092168;
   margin: 20px 0px 20px 0px;
 }
 
@@ -793,7 +794,7 @@ video {
   font-family: lora;
   font-size: 1.5em;
   line-height: normal;
-  color: #092168;
+  color: #e84249;
   margin: 0px 0px 10px 0px;
 }
 
@@ -801,12 +802,13 @@ video {
   font-family: lora-italic;
   font-size: 0.9em;
   line-height: normal;
-  color: rgb(232, 66, 73);
+  color: #62BDA4;
   margin-bottom: 10px;
+  display: none;
 }
 
 .card-details span {
-  background: whitesmoke;
+
   border-radius: 20px;
   padding: 3px 10px;
   line-height: 30px;
