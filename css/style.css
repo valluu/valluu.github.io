@@ -41,7 +41,7 @@ section {
   font-family: lora;
   font-size: 3em;
   line-height: normal;
-  color: #e84249 ;
+  color: #e84249;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -469,10 +469,12 @@ video {
   max-width: 50vw;
 }
 
-.questions .questionstext1 {
-  font-family: lora;
-  font-size: 40px;
+.questions .questionstext {
+  font-family: lora-italic;
+  font-size: 2em;
+  line-height: normal;
   color: #092168;
+  margin-bottom: 10px;
 }
 
 .questions .questionstext2 {
