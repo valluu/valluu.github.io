@@ -826,3 +826,8 @@ video {
   color: #222;
   margin: 2px;
 }
+
+.section-separator {
+  height: 3px;
+  background-color: rgba(227, 218, 203, 0.5);
+}
