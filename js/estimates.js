@@ -980,7 +980,7 @@ function setPreset(num) {
                 const num_mfs = data[i]["mfs"].length;
                 for (let k=0; k<num_mfs; k++) {
                     if (k==0) {
-                        usecases[i][j][k] = ratios[0] * data[i]["mfs"][k]["default"];
+                        usecases[i][j][k] = Math.ceil(ratios[0] * data[i]["mfs"][k]["default"]);
                     } else {
                         usecases[i][j][k] = data[i]["mfs"][k]["default"];
                     }
@@ -988,9 +988,9 @@ function setPreset(num) {
             }
         } else {
             if (data[i]["name"] == "Regulatory Compliance Risk") {
-                usecases[i] = ratios[1] * data[i]["value"]["default"];
+                usecases[i] = Math.ceil(ratios[1] * data[i]["value"]["default"]);
             } else {
-                usecases[i] = ratios[0] * data[i]["value"]["default"];
+                usecases[i] = Math.ceil(ratios[0] * data[i]["value"]["default"]);
             }
         }
     }
