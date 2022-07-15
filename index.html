@@ -583,7 +583,7 @@
             <div id="popup">
                 <div id="inforeq">
                     <h2>Your details</h2>
-                    <p>To receive your report, please enter the following information.</p>
+                    <p>To be emailed your report, please enter the following information.</p>
                     <!-- This overlay is used for capturing user information before generating the report -->
                     <form id="usrinfo" onsubmit="generateReport_step2(); return false;">
                         <!-- <label for="company">Company</label><br /> -->
@@ -628,18 +628,28 @@
 
                         <div id="welcome-note" class="des-b">
                             <div class="subtitle">Getting Started</div>
-                            <p>Each selection choice will build the potential cost savings you could realise by
-                                implementing Valluu. After making your selections, run the Report to see the breakdown
-                                of the potential savings. The Report will be sent to your designated eMail, submitted
-                                via the Contact section.
+                            <p>Please select your business size to estimate the savings that using Valluu
+                              could deliver to your business.
+                            </p>
+                            <p>The estimation is based upon average data for the given business sizes.
+                              Please select "Generate Report" for a detailed breakdown of the input data
+                              and how the saving figure is estimated.
                             </p>
                         </div>
 
                         <div id="usecases">
+                          <div class="category-group">
+                              <div class="usecase clickable" id="size-0" onclick="setPreset(0);" style="--c: #eeeeee;">
+                                  <div>Small<span class="note"><br /><br />(<50 employees)</span></div>
+                              </div>
+                              <div class="usecase clickable" id="size-1" onclick="setPreset(1);" style="--c: #eeeeee;">
+                                  <div>Medium<span class="note"><br /><br />(50-249 employees)</span></div>
+                              </div>
+                              <div class="usecase clickable" id="size-2" onclick="setPreset(2);" style="--c: #eeeeee;">
+                                  <div>Large<span class="note"><br /><br />(≥250 employees)</span></div>
+                              </div>
+                          </div>
                         </div>
-                        <div id="adder">
-                        </div>
-
                         <div>
                             <div id="finish-buttons" class="button-group">
                                 <div id="reset-button" class="button des-f" onclick="reset();">
