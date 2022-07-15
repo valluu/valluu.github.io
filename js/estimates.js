@@ -870,7 +870,7 @@ function updateDisplay() {
     if (total_value == 0) {
         $("#finish-buttons").css("display", "none");
     } else {
-        $("#welcome-note.des-b").hide(1500);
+        // $("#welcome-note.des-b").hide(1500);
         $("#finish-buttons").css("display", "grid");
     }
 
