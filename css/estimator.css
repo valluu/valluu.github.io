@@ -94,7 +94,7 @@
 #estimatorsection .category-group {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   justify-content: center;
 }
@@ -140,8 +140,8 @@
 }
 
 #estimatorsection .usecase.selected {
-  color: #ffffff;
-  background-color: var(--c, #000000);
+  color: #000000;
+  background-color: var(--c, #dbd1be);
 }
 
 #estimatorsection .selected-icon {
@@ -680,21 +680,21 @@
 
 /* For smaller screens, run the categories vertically */
 @media screen and (max-width: 910px) {
-#estimatorsection #usecases {
+/*#estimatorsection #usecases {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);*/
     /* justify-items: center; */
     /* justify-content: center; */
     /* align-content: start; */
-  }
+  /*}
 #estimatorsection .category-group {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     justify-items: center;
     justify-content: center;
-  }
+  }*/
 #estimatorsection #mini-cases {
     display: grid;
     grid-template-rows: auto auto;
