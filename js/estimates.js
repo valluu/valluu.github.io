@@ -588,6 +588,8 @@ for (let i=0; i<data.length; i++) {
     }
 }
 
+const preset_ratios = [[0.05, 0.05], [1, 1], [5, 1]];
+
 const default_cost_per_fte = 660;  // $
 let cost_per_fte = default_cost_per_fte;
 
@@ -660,7 +662,7 @@ function loadingTasks() {
         cats[i]["count"] = cat_count;
         cat_count = 0;
     }
-    $("#usecases").html(c);
+    // $("#usecases").html(c);
 
     // Set up the bars for the categories.
 
@@ -967,6 +969,35 @@ function changeValue(num, comp, mf, factor) {
         $("#mf-"+num+"-"+comp+"-"+mf).val(new_val);
     }
     addCase(num);   
+}
+
+function setPreset(num) {
+    const ratios = preset_ratios[num];
+
+    for (let i=0; i<data.length; i++) {
+        if (data[i]["base"] == "time") {
+            for (let j=0; j<3; j++) {
+                const num_mfs = data[i]["mfs"].length;
+                for (let k=0; k<num_mfs; k++) {
+                    if (k==0) {
+                        usecases[i][j][k] = ratios[0] * data[i]["mfs"][k]["default"];
+                    } else {
+                        usecases[i][j][k] = data[i]["mfs"][k]["default"];
+                    }
+                }
+            }
+        } else {
+            if (data[i]["name"] == "Regulatory Compliance Risk") {
+                usecases[i] = ratios[1] * data[i]["value"]["default"];
+            } else {
+                usecases[i] = ratios[0] * data[i]["value"]["default"];
+            }
+        }
+    }
+
+    $(".usecase").removeClass("selected");
+    $("#size-"+num+".usecase").addClass("selected");
+    updateDisplay();
 }
 
 function openAdder(num) {
