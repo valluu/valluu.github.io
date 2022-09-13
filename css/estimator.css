@@ -154,7 +154,7 @@
 }
 
 #estimatorsection .usecase:hover {
-  /* border: 1px solid var(--c, #000000); */
+  border: 5px solid var(--vred);
   box-shadow: 0 0 8px rgb(12 10 10 / 80%);
 }
 
