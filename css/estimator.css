@@ -126,7 +126,7 @@
   border-radius: 20%;
   font-weight: bold;
   color: #000000;
-  border: 3px solid var(--c, #000000);
+  border: 3px solid var(--vred);
   box-sizing: border-box;
   width: 100px;
   height: 100px;
@@ -140,8 +140,8 @@
 }
 
 #estimatorsection .usecase.selected {
-  color: #000000;
-  background-color: var(--c, #dbd1be);
+  color: #ffffff;
+  background-color: var(--vred);
 }
 
 #estimatorsection .selected-icon {
