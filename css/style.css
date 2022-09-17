@@ -106,11 +106,11 @@ a.button {
 
 /** Sections with custom backgorund colors**/
 
+#section-1,
 #section-3,
 #section-5,
 #section-7,
 #section-9,
-
 #solution,
 #democratization {
   background-color: rgba(227, 218, 203, 0.5);
@@ -771,6 +771,7 @@ video {
 
 .cards-container .card {
   max-width: 400px;
+  min-width: 300px;
 }
 
 .card-title {
@@ -785,7 +786,6 @@ video {
 .card-image {
   min-height: 200px;
   vertical-align: middle;
-  display: none;
 }
 
 .card-image img {
