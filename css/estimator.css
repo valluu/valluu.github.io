@@ -186,6 +186,7 @@
   border-radius: 15px;
   display: grid;
   align-content: center;
+  background-color: whitesmoke;
 }
 
 #estimatorsection #overview p {
