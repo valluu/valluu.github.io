@@ -747,7 +747,8 @@ function generateReport_step2() {
             "role": $("#usrinfo #role").val(),
             "email": $("#usrinfo #email").val(),
             "ftecost": cost_per_fte,
-            "usecases": JSON.stringify(usecases)
+            "usecases": JSON.stringify(usecases),
+            "size": selected_size
         },
         // success: (data2, status, jqXHR) => {
         //     console.log("Report received!");
