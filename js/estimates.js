@@ -589,6 +589,7 @@ for (let i=0; i<data.length; i++) {
 }
 
 const preset_ratios = [[0.05, 0.05], [1, 1], [5, 1]];
+let selected_size = -1;
 
 const default_cost_per_fte = 660;  // $
 let cost_per_fte = default_cost_per_fte;
@@ -998,6 +999,7 @@ function setPreset(num) {
 
     $(".usecase").removeClass("selected");
     $("#size-"+num+".usecase").addClass("selected");
+    selected_size = num;
     updateDisplay();
 }
 
