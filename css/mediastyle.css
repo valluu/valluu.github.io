@@ -128,11 +128,11 @@
     }
 
     .descriptions {
-        order: 1;
+        order: 2;
     }
 
     .visuals {
-        order: 2;
+        order: 1;
     }
 
     #estimator .overview {
