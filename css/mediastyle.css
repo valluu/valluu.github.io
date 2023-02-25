@@ -902,7 +902,11 @@
     #section-9 .highlight,
     #section-9 .text,
     #section-9 .title,
-    #section-9 .subtitle {
+    #section-9 .subtitle,
+    #section-11 .highlight,
+    #section-11 .text,
+    #section-11 .title,
+    #section-11 .subtitle {
         text-align: right;
     }
 
@@ -922,6 +926,10 @@
     #section-8 .text,
     #section-8 .title,
     #section-8 .subtitle,
+    #section-10 .highlight,
+    #section-10 .text,
+    #section-10 .title,
+    #section-10 .subtitle,
     #about .highlight,
     #about .text,
     #about .title,
@@ -955,7 +963,11 @@
     #section-9 .highlight,
     #section-9 .text,
     #section-9 .title,
-    #section-9 .subtitle {
+    #section-9 .subtitle,
+    #section-11 .highlight,
+    #section-11 .text,
+    #section-11 .title,
+    #section-11 .subtitle {
         text-align: right;
     }
 
@@ -975,6 +987,10 @@
     #section-8 .text,
     #section-8 .title,
     #section-8 .subtitle,
+    #section-10 .highlight,
+    #section-10 .text,
+    #section-10 .title,
+    #section-10 .subtitle,
     #about .highlight,
     #about .text,
     #about .title,
@@ -1130,7 +1146,11 @@
     #section-9 .highlight,
     #section-9 .text,
     #section-9 .title,
-    #section-9 .subtitle {
+    #section-9 .subtitle,
+    #section-11 .highlight,
+    #section-11 .text,
+    #section-11 .title,
+    #section-11 .subtitle {
         text-align: right;
     }
 
@@ -1150,6 +1170,10 @@
     #section-8 .text,
     #section-8 .title,
     #section-8 .subtitle,
+    #section-10 .highlight,
+    #section-10 .text,
+    #section-10 .title,
+    #section-10 .subtitle,
     #about .highlight,
     #about .text,
     #about .title,
