@@ -123,10 +123,11 @@
 
 #estimatorsection .usecase {
   font-size: 12px;
-  border-radius: 20%;
-  font-weight: bold;
-  color: #000000;
-  border: 3px solid var(--vred);
+  border-radius: 50%;
+  /* font-weight: bold; */
+  color: #FFFFFF;
+  background-color: var(--vred);
+  border: 3px solid #FFFFFF;
   box-sizing: border-box;
   width: 100px;
   height: 100px;
@@ -140,8 +141,9 @@
 }
 
 #estimatorsection .usecase.selected {
-  color: #ffffff;
-  background-color: var(--vred);
+  color: #000000;
+  font-weight: bold;
+  background-color: #e3dacb;
 }
 
 #estimatorsection .selected-icon {
@@ -154,7 +156,7 @@
 }
 
 #estimatorsection .usecase:hover {
-  border: 5px solid var(--vred);
+  border: 5px solid #FFFFFF;
   box-shadow: 0 0 8px rgb(12 10 10 / 80%);
 }
 
