@@ -836,3 +836,7 @@ video {
   height: 3px;
   background-color: rgba(227, 218, 203, 0.5);
 }
+
+table#time_comp tr:nth-child(even) {
+  background-color: #e3dacb;
+}
