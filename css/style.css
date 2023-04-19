@@ -837,6 +837,10 @@ video {
   background-color: rgba(227, 218, 203, 0.5);
 }
 
+table#time_comp td, table#time_comp th {
+  padding-left: 5px;
+}
+
 table#time_comp tr:nth-child(even) {
   background-color: #e3dacb;
 }
