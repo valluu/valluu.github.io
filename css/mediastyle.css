@@ -1151,7 +1151,7 @@
     #section-11 .text,
     #section-11 .title,
     #section-11 .subtitle {
-        text-align: left;
+        text-align: right;
     }
 
     #section-2 .highlight,
@@ -1178,7 +1178,7 @@
     #about .text,
     #about .title,
     #about .subtitle {
-        text-align: right;
+        text-align: left;
     }
 }
 
