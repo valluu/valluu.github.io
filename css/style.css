@@ -1,3 +1,27 @@
+:root {
+  --blue: #266d93;
+  --grey-extra-light: #f9f9f9;
+  --grey-light: #f0f0f0;
+  --grey-mid: #e0e0e0;
+  --grey-dark: #e0e0e0;
+  --grey-extra-dark: #808080;
+  --green: #44aa44;
+  --green-light: #eaffea;
+  --red: #931621;
+  --company-color: #8512a1;
+  --company-color-extra-light: #eb9aff54;
+  --company-color-light: #b718dfcb;
+  --company-color-medium-dark: #611175;
+  --company-color-dark: #4f0d5f;
+  --card-selected: #8512a1;
+  --vred: #E84249;
+  --vgreen: #62BDA4;
+  --vblue: #092168;
+  --vgrey: #606060;
+  --vgrey-light: #e9e9e9;
+  --vtaupe: #dbd1be;
+}
+
 /** Sections **/
 
 section {
@@ -115,7 +139,8 @@ a.button {
 #section-13,
 #section-15,
 #solution,
-#democratization {
+#democratization,
+#estimator.pagesection {
   background-color: rgba(227, 218, 203, 0.5);
 }
 
@@ -125,6 +150,39 @@ a.button {
   position: relative;
   background-color: #e84249;
   height: 100vh;
+}
+
+/* .intro .central-section {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+} */
+
+.intro .central-section {
+  /* padding: 20px; */
+  /* width: 100vh; */
+  /* height: 100vh; */
+  height: 100%;
+  width: 100%;
+  display: grid;
+  /* flex-wrap: wrap; */
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  row-gap: 20px;
+  justify-content: center;
+  align-content: center;
+}
+
+.intro .central-section img {
+  /* max-width: 70vh; */
+  max-height: 70%;
+  max-width: 100%;
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  justify-self: center;
 }
 
 .intro .logo img {
@@ -253,10 +311,10 @@ a.button {
 }
 
 .introheader .button {
-  /*
+
   background-color: white;
   color: #092168;
-  */
+
 }
 
 .arrowdown {
@@ -348,8 +406,8 @@ a.button {
 
 .feature-box {
   background-color: var(--vred);
-  padding: 10px;
-  width: 100px;
+  padding: 5px;
+  width: 150px;
   /* height: 100px; */
   border-radius: 5px;
   color: #ffffff;
@@ -363,7 +421,7 @@ a.button {
   justify-content: center;
   align-items: center;
   align-content: center;
-  gap: 10px;
+  gap: 5px;
   transition: 0.25s;
 }
 
@@ -893,4 +951,33 @@ table#time_comp th {
 
 table#time_comp tr:nth-child(even) {
   background-color: #e3dacb;
+}
+
+table.table-0 {
+  text-align: center;
+}
+
+table.table-0 td,
+table.table-0 th {
+  padding: 5px 10px;
+}
+
+table.table-0 tr th:first-child {
+  background-color: var(--vtaupe);
+  color: black;
+}
+
+table.table-0 tr th:not(:first-child) {
+  background-color: var(--vred);
+  color: white;
+}
+
+table.table-0 tr td:first-child {
+  background-color: var(--vred);
+  color: white;
+}
+
+table.table-0 tr td:not(:first-child) {
+  background-color: var(--vtaupe);
+  color: black;
 }
